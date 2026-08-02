@@ -32,7 +32,7 @@ DB_CONFIG = {
     "password": os.getenv("POSTGRES_PASSWORD"),
 }
 
-RAW_DIR = Path(__file__).resolve().parent.parent / "datasets" / "raw" /
+RAW_DIR = Path(__file__).resolve().parent.parent / "datasets" / "raw"
 
 # Urutan WAJIB sesuai dependency FK: customers -> products -> orders -> order_items -> order_payments
 # Setiap entry: (nama tabel tujuan, nama file CSV, list kolom SESUAI URUTAN kolom di file CSV)
