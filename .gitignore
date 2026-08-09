@@ -9,3 +9,6 @@ venv/
 # Environment Variables
 .env
 
+# secrets
+secrets/*.json
+
