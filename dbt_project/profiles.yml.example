@@ -1,0 +1,19 @@
+# TEMPLATE — file asli TIDAK ditaruh di sini (di root project), tapi di:
+#   Windows: C:\Users\<username>\.dbt\profiles.yml
+#   Mac/Linux: ~/.dbt/profiles.yml
+#
+# Ini supaya credential tidak pernah ke-commit ke Git sama sekali,
+# bahkan tidak lewat .gitignore (karena filenya memang di luar folder project).
+
+retail_dwh:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      dataset: silver              # dataset default, tapi tiap model tetap override lewat +schema di dbt_project.yml
+      threads: 4
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      location: asia-southeast1
+      priority: interactive

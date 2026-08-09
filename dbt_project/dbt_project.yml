@@ -1,0 +1,24 @@
+name: 'retail_dwh'
+version: '1.0.0'
+config-version: 2
+
+profile: 'retail_dwh'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  retail_dwh:
+    silver:
+      +materialized: view      # silver = view, hemat storage & selalu fresh dari bronze
+      +schema: silver
+    gold:
+      +materialized: table     # gold = table, supaya query dashboard cepat (tidak compute ulang tiap kali)
+      +schema: gold

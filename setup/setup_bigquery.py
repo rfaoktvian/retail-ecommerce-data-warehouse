@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 PROJECT_ID = os.getenv("GCP_PROJECT_ID")
-LOCATION = os.getenv("GCP_LOCATION", "asia-southeast2")
+LOCATION = os.getenv("GCP_LOCATION", "asia-southeast1") #region sesuaikan bucket
 
 DATASETS = {
     "bronze": "Raw data, apa adanya dari hasil extract (bronze layer)",
