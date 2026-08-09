@@ -1,0 +1,152 @@
+[0m22:10:05.244698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5F786E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5E4FAD20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5F786DB0>]}
+
+
+============================== 22:10:05.247246 | 583995df-3fb7-468b-b4dd-e45d9620f686 ==============================
+[0m22:10:05.247246 [info ] [MainThread]: Running with dbt=1.12.0
+[0m22:10:05.256169 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Rafa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'log_path': 'C:\\Users\\Rafa\\OneDrive - Telkom University\\Documents\\Kuliah\\CV\\Portfolio_Project\\Data Warehouse Project\\retail-ecommerce-data-warehouse\\dbt_project\\logs'}
+[0m22:10:05.889339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '583995df-3fb7-468b-b4dd-e45d9620f686', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5F0A4590>]}
+[0m22:10:05.989371 [debug] [MainThread]: Set downloads directory='C:\Users\Rafa\AppData\Local\Temp\dbt-downloads-r5oyoh1s'
+[0m22:10:05.989371 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:10:06.959878 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:10:06.962819 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:10:07.500176 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:10:07.512980 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m22:10:08.511796 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m22:10:08.577106 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m22:10:08.578181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '583995df-3fb7-468b-b4dd-e45d9620f686', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5F7E4050>]}
+[0m22:10:08.590307 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m22:10:09.759638 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m22:10:09.835413 [info ] [MainThread]: Updating lock file in file path: C:\Users\Rafa\OneDrive - Telkom University\Documents\Kuliah\CV\Portfolio_Project\Data Warehouse Project\retail-ecommerce-data-warehouse\dbt_project/package-lock.yml
+[0m22:10:09.907254 [debug] [MainThread]: Set downloads directory='C:\Users\Rafa\AppData\Local\Temp\dbt-downloads-_ixvg899'
+[0m22:10:09.952586 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:10:12.479030 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+[Errno 2] No such file or directory: 'dbt_packages\\dbt-utils-1.4.1\\integration_tests\\data\\schema_tests\\data_test_mutually_exclusive_ranges_no_gaps.csv'
+[0m22:10:12.628097 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 269, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\cli\main.py", line 480, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\task\deps.py", line 332, in run
+    package.install(self.project, renderer)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\deps\registry.py", line 63, in install
+    self._install(project, renderer)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\deps\base.py", line 121, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt_common\utils\connection.py", line 22, in connection_exception_retry
+    return fn()
+           ^^^^
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\deps\base.py", line 133, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt_common\clients\system.py", line 655, in untar_package
+    safe_extract(tarball, dest_dir)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt_common\clients\system.py", line 640, in safe_extract
+    tarball.extractall(path, filter="data")
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\tarfile.py", line 2302, in extractall
+    self._extract_one(tarinfo, path, set_attrs=not tarinfo.isdir(),
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\tarfile.py", line 2369, in _extract_one
+    self._handle_fatal_error(e)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\tarfile.py", line 2365, in _extract_one
+    self._extract_member(tarinfo, os.path.join(path, tarinfo.name),
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\tarfile.py", line 2448, in _extract_member
+    self.makefile(tarinfo, targetpath)
+  File "c:\Users\Rafa\AppData\Local\Programs\Python\Python312\Lib\tarfile.py", line 2494, in makefile
+    with bltn_open(targetpath, "wb") as target:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'dbt_packages\\dbt-utils-1.4.1\\integration_tests\\data\\schema_tests\\data_test_mutually_exclusive_ranges_no_gaps.csv'
+
+[0m22:10:12.654241 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m22:10:12.668354 [debug] [MainThread]: Command `dbt deps` failed at 22:10:12.668354 after 7.87 seconds
+[0m22:10:12.672886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D5F3AFAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D61A08080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D619C5160>]}
+[0m22:10:12.690929 [debug] [MainThread]: Flushing usage events
+[0m22:10:14.850175 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:10:21.490313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4B75FEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4B71CA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4EC07B30>]}
+
+
+============================== 22:10:21.498309 | 588abb36-4609-4673-8a40-b0b871f9237d ==============================
+[0m22:10:21.498309 [info ] [MainThread]: Running with dbt=1.12.0
+[0m22:10:21.498817 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rafa\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Rafa\\OneDrive - Telkom University\\Documents\\Kuliah\\CV\\Portfolio_Project\\Data Warehouse Project\\retail-ecommerce-data-warehouse\\dbt_project\\logs'}
+[0m22:10:21.543917 [info ] [MainThread]: dbt version: 1.12.0
+[0m22:10:21.544398 [info ] [MainThread]: python version: 3.12.10
+[0m22:10:21.547601 [info ] [MainThread]: python path: c:\Users\Rafa\AppData\Local\Programs\Python\Python312\python.exe
+[0m22:10:21.547601 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:10:28.036210 [info ] [MainThread]: Using profiles dir at C:\Users\Rafa\.dbt
+[0m22:10:28.041571 [info ] [MainThread]: Using profiles.yml file at C:\Users\Rafa\.dbt\profiles.yml
+[0m22:10:28.042615 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Rafa\OneDrive - Telkom University\Documents\Kuliah\CV\Portfolio_Project\Data Warehouse Project\retail-ecommerce-data-warehouse\dbt_project\dbt_project.yml
+[0m22:10:28.054118 [info ] [MainThread]: adapter type: bigquery
+[0m22:10:28.069759 [info ] [MainThread]: adapter version: 1.12.0
+[0m22:10:28.726432 [info ] [MainThread]: Configuration:
+[0m22:10:28.729205 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:10:28.731504 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:10:28.731504 [info ] [MainThread]: Required dependencies:
+[0m22:10:28.734469 [debug] [MainThread]: Executing "git --help"
+[0m22:10:28.906217 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:10:28.907267 [debug] [MainThread]: STDERR: "b''"
+[0m22:10:28.907267 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:10:28.910349 [info ] [MainThread]: Connection:
+[0m22:10:28.917842 [info ] [MainThread]:   method: service-account
+[0m22:10:28.920994 [info ] [MainThread]:   database: qwiklabs-gcp-01-197ea2cb1e4b
+[0m22:10:28.926048 [info ] [MainThread]:   execution_project: qwiklabs-gcp-01-197ea2cb1e4b
+[0m22:10:28.938239 [info ] [MainThread]:   schema: silver
+[0m22:10:28.939310 [info ] [MainThread]:   location: asia-southeast1
+[0m22:10:28.958861 [info ] [MainThread]:   priority: interactive
+[0m22:10:28.977204 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:10:28.990089 [info ] [MainThread]:   reservation: None
+[0m22:10:28.992102 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:10:29.006196 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:10:29.010376 [info ] [MainThread]:   job_retries: 1
+[0m22:10:29.020689 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:10:29.026422 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m22:10:29.038552 [info ] [MainThread]:   job_link_info_level_log: False
+[0m22:10:29.041618 [info ] [MainThread]:   timeout_seconds: None
+[0m22:10:29.043670 [info ] [MainThread]:   client_id: None
+[0m22:10:29.059324 [info ] [MainThread]:   token_uri: None
+[0m22:10:29.070914 [info ] [MainThread]:   compute_region: None
+[0m22:10:29.072923 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:10:29.076984 [info ] [MainThread]:   gcs_bucket: None
+[0m22:10:29.088921 [info ] [MainThread]:   dataproc_batch: None
+[0m22:10:29.090684 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m22:10:32.644046 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:10:32.645061 [debug] [MainThread]: On debug: select 1 as id
+[0m22:10:32.646131 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:10:32.646131 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'secrets/gcp-service-account.json''
+[0m22:10:32.647187 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m22:10:32.648916 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'secrets/gcp-service-account.json'
+[0m22:10:32.648916 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:10:32.652591 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:10:32.653666 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:10:32.659112 [debug] [MainThread]: Command `dbt debug` failed at 22:10:32.659112 after 11.50 seconds
+[0m22:10:32.660192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC5A66DE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4E6DD670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4E7E4470>]}
+[0m22:10:32.660192 [debug] [MainThread]: Flushing usage events
+[0m22:10:34.984591 [debug] [MainThread]: An error was encountered while trying to flush usage events
