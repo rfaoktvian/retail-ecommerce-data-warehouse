@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: postgres_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: postgres_products
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: postgres_orders
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('postgres_customers')
+              field: customer_id
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['delivered', 'shipped', 'canceled', 'unavailable', 'invoiced', 'processing', 'created', 'approved']
+
+  - name: postgres_order_items
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('postgres_orders')
+              field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('postgres_products')
+              field: product_id
+
+  - name: postgres_order_payments
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('postgres_orders')
+              field: order_id
+      - name: payment_type
+        tests:
+          - accepted_values:
+              values: ['credit_card', 'boleto', 'voucher', 'debit_card', 'unknown']
+
+  - name: csv_sellers
+    columns:
+      - name: seller_id
+        tests: [unique, not_null]
+
+  - name: csv_geolocation
+    columns:
+      - name: zip_code_prefix
+        tests: [unique, not_null]
+
+  - name: json_reviews
+    columns:
+      - name: review_id
+        tests: [unique, not_null]
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('postgres_orders')
+              field: order_id

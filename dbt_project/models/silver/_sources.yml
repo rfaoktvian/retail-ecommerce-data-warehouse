@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: "{{ env_var('GCP_PROJECT_ID') }}"
+    schema: bronze
+    description: "Raw data hasil extract, dimuat oleh bigquery_loader.py (di luar dbt)"
+    tables:
+      - name: postgres_customers
+      - name: postgres_products
+      - name: postgres_orders
+      - name: postgres_order_items
+      - name: postgres_order_payments
+      - name: csv_sellers
+      - name: csv_geolocation
+      - name: json_reviews
