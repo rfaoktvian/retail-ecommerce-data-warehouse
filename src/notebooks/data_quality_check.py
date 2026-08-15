@@ -169,11 +169,18 @@ print("\n" + "=" * 70)
 print("8. GEOLOCATION")
 print("=" * 70)
 check_completeness(geolocation, "geolocation")
-check_duplicates(geolocation, "geolocation")  # full-row duplicate, wajar cukup banyak
+check_duplicates(geolocation, "geolocation")  
 unique_zip = geolocation["geolocation_zip_code_prefix"].nunique()
 print(f"\n[geolocation] Unique zip_code_prefix: {unique_zip:,} dari {len(geolocation):,} baris total "
       f"(rasio duplikat per zip tinggi = wajar, akan di-agregasi di silver)")
 
+check_duplicates(order_payments, "order_payments")
+
+check_category_consistency(products, "products", "product_category_name")
+
+check_referential_integrity(orders, order_items, "order_id", "order_id", "orders -> order_items (reverse)")
+check_referential_integrity(orders, order_payments, "order_id", "order_id", "orders -> order_payments (reverse)")
+
 print("\n" + "=" * 70)
-print("SELESAI — review hasil di atas sebelum lanjut menulis logic cleaning silver")
+print("SELESAI")
 print("=" * 70)
