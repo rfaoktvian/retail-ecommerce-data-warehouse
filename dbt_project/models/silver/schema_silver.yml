@@ -1,17 +1,22 @@
 version: 2
 
 models:
-  - name: postgres_customers
+  - name: stg_customers
+    description: "Silver: customers, standardisasi casing city/state"
     columns:
       - name: customer_id
         tests: [unique, not_null]
+      - name: customer_unique_id
+        tests: [not_null]
 
-  - name: postgres_products
+  - name: stg_products
+    description: "Silver: products, lowercase kategori, fix weight_g = 0 → null"
     columns:
       - name: product_id
         tests: [unique, not_null]
 
-  - name: postgres_orders
+  - name: stg_orders
+    description: "Silver: orders, fix carrier_date < purchase_timestamp → null"
     columns:
       - name: order_id
         tests: [unique, not_null]
@@ -19,52 +24,63 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('postgres_customers')
+              to: ref('stg_customers')
               field: customer_id
       - name: order_status
         tests:
           - accepted_values:
               values: ['delivered', 'shipped', 'canceled', 'unavailable', 'invoiced', 'processing', 'created', 'approved']
 
-  - name: postgres_order_items
+  - name: stg_order_items
+    description: "Silver: order_items, freight_value = 0 dibiarkan (valid: gratis ongkir)"
     columns:
       - name: order_id
         tests:
           - not_null
           - relationships:
-              to: ref('postgres_orders')
+              to: ref('stg_orders')
               field: order_id
       - name: product_id
         tests:
           - not_null
           - relationships:
-              to: ref('postgres_products')
+              to: ref('stg_products')
               field: product_id
+      - name: seller_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_sellers')
+              field: seller_id
 
-  - name: postgres_order_payments
+  - name: stg_order_payments
+    description: "Silver: order_payments, not_defined → unknown, installments = 0 → 1"
     columns:
       - name: order_id
         tests:
           - not_null
           - relationships:
-              to: ref('postgres_orders')
+              to: ref('stg_orders')
               field: order_id
       - name: payment_type
         tests:
           - accepted_values:
               values: ['credit_card', 'boleto', 'voucher', 'debit_card', 'unknown']
 
-  - name: csv_sellers
+  - name: stg_sellers
+    description: "Silver: sellers, standardisasi casing city/state"
     columns:
       - name: seller_id
         tests: [unique, not_null]
 
-  - name: csv_geolocation
+  - name: stg_geolocation
+    description: "Silver: geolocation, dedup 261.831 baris via GROUP BY zip → avg lat/lng"
     columns:
       - name: zip_code_prefix
         tests: [unique, not_null]
 
-  - name: json_reviews
+  - name: stg_reviews
+    description: "Silver: reviews, camelCase → snake_case, dedup 814 duplikat review_id via QUALIFY"
     columns:
       - name: review_id
         tests: [unique, not_null]
@@ -72,5 +88,10 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('postgres_orders')
+              to: ref('stg_orders')
               field: order_id
+      - name: review_score
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
