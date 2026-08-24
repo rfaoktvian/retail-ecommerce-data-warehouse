@@ -5,7 +5,7 @@
 with dbt_test__target as (
 
   select sales_key as unique_field
-  from `qwiklabs-gcp-04-05c5517686d1`.`gold`.`fact_sales`
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
   where sales_key is not null
 
 )

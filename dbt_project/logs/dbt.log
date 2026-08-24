@@ -7136,3 +7136,1976 @@ left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_geography` dg
 [0m10:41:25.258363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232450C7C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023245270BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023244DFA1B0>]}
 [0m10:41:25.259517 [debug] [MainThread]: Flushing usage events
 [0m10:41:26.961026 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:46:31.949077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F578A4E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F5AC87F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F5AFE30B0>]}
+
+
+============================== 10:46:31.959074 | 8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec ==============================
+[0m10:46:31.959074 [info ] [MainThread]: Running with dbt=1.12.0
+[0m10:46:31.963308 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rafa\\.dbt', 'invocation_command': 'dbt run --select silver', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\MyPortfolioProject\\data-engineer\\retail-ecommerce-data-warehouse\\dbt_project\\logs'}
+[0m10:46:35.706507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F683B9FD0>]}
+[0m10:46:35.796883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F5B0C6CF0>]}
+[0m10:46:35.797942 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m10:46:36.738898 [debug] [MainThread]: checksum: 612f907c6c5953f2ffe0da3f983926661efb1ed24fc992e677fd1adf1223f62b, vars: {}, profile: retail_dwh, target: dev, version: 1.12.0
+[0m10:46:37.299657 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m10:46:37.301668 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_order_items.sql
+[0m10:46:37.303680 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_order_payments.sql
+[0m10:46:37.303680 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_reviews.sql
+[0m10:46:37.305689 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_orders.sql
+[0m10:46:37.306215 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_order_items.sql
+[0m10:46:37.306215 [debug] [MainThread]: Partial parsing: updated file: retail_dwh://models\silver\stg_reviews.sql
+[0m10:46:38.216261 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_order_items'
+in package 'retail_dwh' (models\silver\schema_silver.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m10:46:38.217833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68DDB3B0>]}
+[0m10:46:38.613738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68E9A300>]}
+[0m10:46:38.820378 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:46:38.827435 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:46:38.886327 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:46:38.923842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68F43560>]}
+[0m10:46:38.923842 [info ] [MainThread]: Found 16 models, 47 data tests, 8 sources, 945 macros
+[0m10:46:38.926202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68EE5C10>]}
+[0m10:46:38.931516 [info ] [MainThread]: 
+[0m10:46:38.932628 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:46:38.932628 [info ] [MainThread]: 
+[0m10:46:38.934346 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:46:38.943601 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681'
+[0m10:46:38.945677 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:46:41.071331 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_gold'
+[0m10:46:41.071331 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:46:41.073760 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_silver'
+[0m10:46:41.074226 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:46:43.547445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68857C80>]}
+[0m10:46:43.548787 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:46:43.610133 [debug] [Thread-1 (]: Began running node model.retail_dwh.stg_customers
+[0m10:46:43.610133 [debug] [Thread-2 (]: Began running node model.retail_dwh.stg_geolocation
+[0m10:46:43.610133 [debug] [Thread-3 (]: Began running node model.retail_dwh.stg_order_items
+[0m10:46:43.614743 [info ] [Thread-1 (]: 1 of 8 START sql view model silver.stg_customers ............................... [RUN]
+[0m10:46:43.614743 [debug] [Thread-4 (]: Began running node model.retail_dwh.stg_order_payments
+[0m10:46:43.615749 [info ] [Thread-2 (]: 2 of 8 START sql view model silver.stg_geolocation ............................. [RUN]
+[0m10:46:43.616811 [info ] [Thread-3 (]: 3 of 8 START sql view model silver.stg_order_items ............................. [RUN]
+[0m10:46:43.618786 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.retail_dwh.stg_customers'
+[0m10:46:43.619319 [info ] [Thread-4 (]: 4 of 8 START sql view model silver.stg_order_payments .......................... [RUN]
+[0m10:46:43.620937 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.retail_dwh.stg_geolocation'
+[0m10:46:43.621935 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.retail_dwh.stg_order_items'
+[0m10:46:43.622829 [debug] [Thread-1 (]: Began compiling node model.retail_dwh.stg_customers
+[0m10:46:43.623367 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.retail_dwh.stg_order_payments'
+[0m10:46:43.624460 [debug] [Thread-2 (]: Began compiling node model.retail_dwh.stg_geolocation
+[0m10:46:43.625260 [debug] [Thread-3 (]: Began compiling node model.retail_dwh.stg_order_items
+[0m10:46:43.635700 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dwh.stg_customers"
+[0m10:46:43.636223 [debug] [Thread-4 (]: Began compiling node model.retail_dwh.stg_order_payments
+[0m10:46:43.639075 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_dwh.stg_geolocation"
+[0m10:46:43.643803 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail_dwh.stg_order_items"
+[0m10:46:43.647352 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_dwh.stg_order_payments"
+[0m10:46:43.647352 [debug] [Thread-1 (]: Began executing node model.retail_dwh.stg_customers
+[0m10:46:43.695655 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dwh.stg_customers"
+[0m10:46:43.697208 [debug] [Thread-3 (]: Began executing node model.retail_dwh.stg_order_items
+[0m10:46:43.702803 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail_dwh.stg_order_items"
+[0m10:46:43.703803 [debug] [Thread-4 (]: Began executing node model.retail_dwh.stg_order_payments
+[0m10:46:43.704602 [debug] [Thread-2 (]: Began executing node model.retail_dwh.stg_geolocation
+[0m10:46:43.707275 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_dwh.stg_order_payments"
+[0m10:46:43.710118 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_dwh.stg_geolocation"
+[0m10:46:43.712126 [debug] [Thread-1 (]: On model.retail_dwh.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_customers"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_customers`
+  OPTIONS()
+  as -- Silver: customers
+-- Cleaning: standardisasi casing city/state, buang baris tanpa customer_id
+
+select
+    customer_id,
+    customer_unique_id,
+    customer_zip_code_prefix as zip_code_prefix,
+    lower(trim(customer_city)) as city,
+    upper(trim(customer_state)) as state,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`postgres_customers`
+where customer_id is not null;
+
+
+[0m10:46:43.712126 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:46:43.712126 [debug] [Thread-3 (]: On model.retail_dwh.stg_order_items: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_order_items"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_order_items`
+  OPTIONS()
+  as -- Silver: order_items
+-- Source: bronze.postgres_order_items
+-- Cleaning:
+--   1. Buang baris tanpa order_id / product_id (integritas dasar bridge table)
+--   2. [DQ NOTE] 383 baris dengan freight_value = 0 dibiarkan — nilai nol adalah VALID
+--      (bisa gratis ongkir karena promo, voucher, atau kebijakan seller tertentu).
+--      Tidak di-nullify karena bukan data error.
+
+select
+    order_id,
+    order_item_id,
+    product_id,
+    seller_id,
+    TIMESTAMP_MICROS(CAST(shipping_limit_date / 1000 AS INT64)) as shipping_limit_date,
+    price,
+    freight_value,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`postgres_order_items`
+where order_id is not null
+  and product_id is not null;
+
+
+[0m10:46:43.715527 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:46:43.765743 [debug] [Thread-4 (]: On model.retail_dwh.stg_order_payments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_order_payments"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_order_payments`
+  OPTIONS()
+  as -- Silver: order_payments
+-- Source: bronze.postgres_order_payments
+-- Cleaning:
+--   1. [DQ FIX] 3 baris payment_type = 'not_defined' → distandarkan jadi 'unknown'
+--      agar tidak ada nilai ambigu di kolom kategori.
+--   2. [DQ FIX] 2 baris payment_installments = 0 → di-floor ke 1
+--      (secara bisnis minimal 1x pembayaran, nilai 0 adalah error input).
+--   3. [DQ NOTE] 9 baris payment_value = 0 dibiarkan — nilai nol adalah VALID
+--      (bisa full-voucher atau order yang di-cover promo 100%).
+--      Tidak di-nullify karena tidak bisa dibedakan dari error tanpa info tambahan.
+
+select
+    order_id,
+    payment_sequential,
+    -- DQ Fix #1: normalisasi payment_type
+    case
+        when lower(trim(payment_type)) = 'not_defined' then 'unknown'
+        else lower(trim(payment_type))
+    end as payment_type,
+    -- DQ Fix #2: floor payment_installments ke minimum 1
+    case
+        when payment_installments = 0 then 1
+        else payment_installments
+    end as payment_installments,
+    payment_value,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`postgres_order_payments`
+where order_id is not null;
+
+
+[0m10:46:43.816293 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:46:43.817311 [debug] [Thread-2 (]: On model.retail_dwh.stg_geolocation: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_geolocation"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_geolocation`
+  OPTIONS()
+  as -- Silver: geolocation
+-- Cleaning KHUSUS: source asli (bronze) punya BANYAK baris duplikat per zip_code_prefix
+-- (satu prefix zip bisa muncul ribuan kali dengan lat/lng sedikit berbeda, hasil GPS crowdsource).
+-- Untuk dipakai sebagai dimension nanti (1 baris = 1 zip code), kita agregasi:
+-- ambil rata-rata lat/lng, dan ambil salah satu nilai city/state yang representatif.
+ 
+select
+    cast(geolocation_zip_code_prefix as string) as zip_code_prefix,
+    avg(geolocation_lat) as latitude,
+    avg(geolocation_lng) as longitude,
+    any_value(lower(trim(geolocation_city))) as city,
+    any_value(upper(trim(geolocation_state))) as state
+ 
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`csv_geolocation`
+where geolocation_zip_code_prefix is not null
+group by geolocation_zip_code_prefix;
+
+
+[0m10:46:43.817311 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:46:46.777305 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:36b10825-3140-4429-bb3f-e4bfaf0332fa&page=queryresults
+[0m10:46:46.816287 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:5327ba4d-6e02-4732-8755-31f86e4628e3&page=queryresults
+[0m10:46:47.103931 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:36773a63-3c16-4c1d-af40-f380c471aa53&page=queryresults
+[0m10:46:47.131331 [debug] [Thread-4 (]: SQL status: OK in 0.353 seconds
+[0m10:46:47.160334 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:a6394962-cf27-4764-a854-e922453272cb&page=queryresults
+[0m10:46:47.252333 [debug] [Thread-2 (]: SQL status: OK in 0.435 seconds
+[0m10:46:47.425323 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F6A1E7CB0>]}
+[0m10:46:47.425323 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F681DE8D0>]}
+[0m10:46:47.426347 [info ] [Thread-4 (]: 4 of 8 OK created sql view model silver.stg_order_payments ..................... [[32mCREATE VIEW (0 processed)[0m in 3.79s]
+[0m10:46:47.430160 [debug] [Thread-4 (]: Finished running node model.retail_dwh.stg_order_payments
+[0m10:46:47.431159 [debug] [Thread-4 (]: Began running node model.retail_dwh.stg_orders
+[0m10:46:47.428418 [info ] [Thread-2 (]: 2 of 8 OK created sql view model silver.stg_geolocation ........................ [[32mCREATE VIEW (0 processed)[0m in 3.80s]
+[0m10:46:47.432774 [info ] [Thread-4 (]: 5 of 8 START sql view model silver.stg_orders .................................. [RUN]
+[0m10:46:47.433311 [debug] [Thread-2 (]: Finished running node model.retail_dwh.stg_geolocation
+[0m10:46:47.435380 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.retail_dwh.stg_order_payments, now model.retail_dwh.stg_orders)
+[0m10:46:47.437641 [debug] [Thread-2 (]: Began running node model.retail_dwh.stg_products
+[0m10:46:47.438153 [debug] [Thread-4 (]: Began compiling node model.retail_dwh.stg_orders
+[0m10:46:47.439823 [info ] [Thread-2 (]: 6 of 8 START sql view model silver.stg_products ................................ [RUN]
+[0m10:46:47.443507 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_dwh.stg_orders"
+[0m10:46:47.444534 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.retail_dwh.stg_geolocation, now model.retail_dwh.stg_products)
+[0m10:46:47.445570 [debug] [Thread-2 (]: Began compiling node model.retail_dwh.stg_products
+[0m10:46:47.450952 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_dwh.stg_products"
+[0m10:46:47.453486 [debug] [Thread-4 (]: Began executing node model.retail_dwh.stg_orders
+[0m10:46:47.458041 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_dwh.stg_orders"
+[0m10:46:47.458553 [debug] [Thread-2 (]: Began executing node model.retail_dwh.stg_products
+[0m10:46:47.469081 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_dwh.stg_products"
+[0m10:46:47.471153 [debug] [Thread-4 (]: On model.retail_dwh.stg_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_orders"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_orders`
+  OPTIONS()
+  as -- Silver: orders
+-- Source: bronze.postgres_orders
+-- Cleaning:
+--   1. Standardisasi order_status (lowercase, trim) + rename kolom timestamp lebih ringkas
+--   2. [DQ NOTE] 160 null order_approved_at (0.16%) — WAJAR untuk order dengan status
+--      'canceled', 'unavailable', atau 'created' yang belum sempat di-approve.
+--      Kolom dibiarkan nullable.
+--   3. [DQ FIX] 166 baris order_delivered_carrier_date < order_purchase_timestamp
+--      (tidak logis, kemungkinan error input di source) → di-nullify, bukan dihapus barisnya.
+--   4. [DQ NOTE] 1783 null order_delivered_carrier_date (1.79%) dan
+--      2965 null order_delivered_customer_date (2.98%) — WAJAR untuk order yang belum
+--      sampai ke carrier / belum diterima customer (status non-delivered).
+--      Kolom dibiarkan nullable.
+
+select
+    order_id,
+    customer_id,
+    lower(trim(order_status))                       as order_status,
+    TIMESTAMP_MICROS(CAST(order_purchase_timestamp / 1000 AS INT64)) as order_date,
+    -- DQ Note: 160 null (0.16%), wajar untuk order yang belum/tidak di-approve
+    TIMESTAMP_MICROS(CAST(order_approved_at / 1000 AS INT64))       as approved_at,
+    -- DQ Fix: 166 baris carrier_date < purchase_timestamp → null (tidak logis)
+    -- DQ Note: 1783 null (1.79%), wajar untuk order belum di-pickup carrier
+    case
+        when order_delivered_carrier_date < order_purchase_timestamp then null
+        else TIMESTAMP_MICROS(CAST(order_delivered_carrier_date / 1000 AS INT64))
+    end                                                             as delivered_carrier_at,
+    -- DQ Note: 2965 null (2.98%), wajar untuk order belum diterima customer
+    TIMESTAMP_MICROS(CAST(order_delivered_customer_date / 1000 AS INT64)) as delivered_customer_at,
+    TIMESTAMP_MICROS(CAST(order_estimated_delivery_date / 1000 AS INT64)) as estimated_delivery_date,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`postgres_orders`
+where order_id is not null;
+
+
+[0m10:46:47.473170 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:46:47.546440 [debug] [Thread-3 (]: SQL status: OK in 0.442 seconds
+[0m10:46:47.547456 [debug] [Thread-1 (]: SQL status: OK in 0.386 seconds
+[0m10:46:47.553710 [debug] [Thread-2 (]: On model.retail_dwh.stg_products: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_products"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_products`
+  OPTIONS()
+  as -- Silver: products
+-- Source: bronze.postgres_products
+-- Cleaning:
+--   1. Standardisasi nama kategori (lowercase, trim)
+--   2. [DQ NOTE] 610 baris null product_category_name (1.85%) — dibiarkan null.
+--      Tidak bisa di-impute secara akurat tanpa data tambahan.
+--      Akan di-handle di gold layer dengan COALESCE ke 'uncategorized' jika diperlukan.
+--   3. [DQ NOTE] 610 baris null product_name_length, product_description_length, product_photos_qty
+--      — berkorelasi dengan baris yang sama (produk tanpa metadata teks), dibiarkan null.
+--   4. [DQ FIX] 4 baris weight_g = 0 → di-nullify karena barang fisik tidak mungkin
+--      beratnya nol (kemungkinan error input di source).
+--   5. [DQ NOTE] 2 baris null weight_g, length_cm, height_cm, width_cm — dibiarkan null
+--      (tidak cukup info untuk di-impute dengan aman).
+
+select
+    product_id,
+    -- DQ Note: 610 null (1.85%), dibiarkan null
+    lower(trim(product_category_name)) as product_category_name,
+    -- DQ Note: 610 null, berkorelasi dengan produk tanpa metadata teks
+    product_name_length,
+    product_description_length,
+    product_photos_qty,
+    -- DQ Fix: 4 baris weight_g = 0 → null (barang fisik tidak mungkin beratnya nol)
+    case
+        when product_weight_g = 0 then null
+        else product_weight_g
+    end as weight_g,
+    -- DQ Note: 2 null, dibiarkan null
+    product_length_cm as length_cm,
+    product_height_cm as height_cm,
+    product_width_cm  as width_cm,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`postgres_products`
+where product_id is not null;
+
+
+[0m10:46:47.558672 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F691BF500>]}
+[0m10:46:47.571620 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F6A32ED80>]}
+[0m10:46:47.573620 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:46:47.574621 [info ] [Thread-3 (]: 3 of 8 OK created sql view model silver.stg_order_items ........................ [[32mCREATE VIEW (0 processed)[0m in 3.94s]
+[0m10:46:47.577153 [info ] [Thread-1 (]: 1 of 8 OK created sql view model silver.stg_customers .......................... [[32mCREATE VIEW (0 processed)[0m in 3.95s]
+[0m10:46:47.578809 [debug] [Thread-3 (]: Finished running node model.retail_dwh.stg_order_items
+[0m10:46:47.580816 [debug] [Thread-1 (]: Finished running node model.retail_dwh.stg_customers
+[0m10:46:47.581809 [debug] [Thread-3 (]: Began running node model.retail_dwh.stg_reviews
+[0m10:46:47.582811 [debug] [Thread-1 (]: Began running node model.retail_dwh.stg_sellers
+[0m10:46:47.668861 [info ] [Thread-3 (]: 7 of 8 START sql view model silver.stg_reviews ................................. [RUN]
+[0m10:46:47.670870 [info ] [Thread-1 (]: 8 of 8 START sql view model silver.stg_sellers ................................. [RUN]
+[0m10:46:47.672702 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.retail_dwh.stg_order_items, now model.retail_dwh.stg_reviews)
+[0m10:46:47.673716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_dwh.stg_customers, now model.retail_dwh.stg_sellers)
+[0m10:46:47.674713 [debug] [Thread-3 (]: Began compiling node model.retail_dwh.stg_reviews
+[0m10:46:47.676226 [debug] [Thread-1 (]: Began compiling node model.retail_dwh.stg_sellers
+[0m10:46:47.681620 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail_dwh.stg_reviews"
+[0m10:46:47.684270 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dwh.stg_sellers"
+[0m10:46:47.687476 [debug] [Thread-3 (]: Began executing node model.retail_dwh.stg_reviews
+[0m10:46:47.691490 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail_dwh.stg_reviews"
+[0m10:46:47.692495 [debug] [Thread-1 (]: Began executing node model.retail_dwh.stg_sellers
+[0m10:46:47.696511 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dwh.stg_sellers"
+[0m10:46:47.698603 [debug] [Thread-3 (]: On model.retail_dwh.stg_reviews: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_reviews"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_reviews`
+  OPTIONS()
+  as -- Silver: reviews
+-- Source: bronze.json_reviews (format JSON/API dengan kolom camelCase)
+-- Cleaning:
+--   1. Rename kolom camelCase → snake_case (konvensi warehouse)
+--   2. [DQ FIX] Dedup 814 baris duplikat berdasarkan review_id
+--      (satu order bisa memiliki lebih dari satu review entry di source).
+--      Strategi: ambil review terbaru berdasarkan dwh_extracted_at.
+--   3. [DQ NOTE] 87.656 baris null comment_title (88.3%) dan
+--      58.247 baris null comment_message (58.7%) adalah WAJAR —
+--      user tidak wajib mengisi komentar teks saat memberi rating.
+--      Kolom dibiarkan nullable.
+
+select
+    reviewId       as review_id,
+    orderId        as order_id,
+    reviewScore    as review_score,
+    commentTitle   as comment_title,
+    commentMessage as comment_message,
+    cast(createdAt as timestamp)   as created_at,
+    cast(answeredAt as timestamp)  as answered_at,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`json_reviews`
+where reviewId is not null
+
+-- Dedup: dari 814 duplikat review_id, pertahankan record terbaru
+qualify row_number() over (
+    partition by reviewId
+    order by dwh_extracted_at desc
+) = 1;
+
+
+[0m10:46:47.699620 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:46:47.701031 [debug] [Thread-1 (]: On model.retail_dwh.stg_sellers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.stg_sellers"} */
+
+
+  create or replace view `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_sellers`
+  OPTIONS()
+  as -- Silver: sellers
+-- Cleaning: standardisasi casing city/state, sama pola dengan customers
+
+select
+    seller_id,
+    cast(seller_zip_code_prefix as string) as zip_code_prefix,
+    lower(trim(seller_city)) as city,
+    upper(trim(seller_state)) as state,
+    dwh_extracted_at,
+    dwh_source_system
+
+from `qwiklabs-gcp-03-018d48a9d681`.`bronze`.`csv_sellers`
+where seller_id is not null;
+
+
+[0m10:46:47.702297 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:46:50.606365 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:1c1e0dcb-8108-479a-a358-887b7df1e34e&page=queryresults
+[0m10:46:50.629445 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:8b4e1b3d-6670-45ea-942b-43bac8890b92&page=queryresults
+[0m10:46:50.648124 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:70e115e9-fa27-4b21-b950-cb7d7e68cef3&page=queryresults
+[0m10:46:50.704871 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:ac342e90-1e8c-400a-9341-877ca83974a5&page=queryresults
+[0m10:46:50.877486 [debug] [Thread-4 (]: SQL status: OK in 0.271 seconds
+[0m10:46:50.886568 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F6A3676B0>]}
+[0m10:46:50.888597 [info ] [Thread-4 (]: 5 of 8 OK created sql view model silver.stg_orders ............................. [[32mCREATE VIEW (0 processed)[0m in 3.45s]
+[0m10:46:50.890241 [debug] [Thread-4 (]: Finished running node model.retail_dwh.stg_orders
+[0m10:46:50.933661 [debug] [Thread-2 (]: SQL status: OK in 0.303 seconds
+[0m10:46:50.942723 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F68F694C0>]}
+[0m10:46:50.943722 [info ] [Thread-2 (]: 6 of 8 OK created sql view model silver.stg_products ........................... [[32mCREATE VIEW (0 processed)[0m in 3.50s]
+[0m10:46:50.945724 [debug] [Thread-2 (]: Finished running node model.retail_dwh.stg_products
+[0m10:46:50.962734 [debug] [Thread-3 (]: SQL status: OK in 0.314 seconds
+[0m10:46:50.969672 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F6A321CD0>]}
+[0m10:46:50.972661 [info ] [Thread-3 (]: 7 of 8 OK created sql view model silver.stg_reviews ............................ [[32mCREATE VIEW (0 processed)[0m in 3.30s]
+[0m10:46:50.973985 [debug] [Thread-3 (]: Finished running node model.retail_dwh.stg_reviews
+[0m10:46:51.198680 [debug] [Thread-1 (]: SQL status: OK in 0.493 seconds
+[0m10:46:51.207902 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8edf60f2-4d31-43a0-997a-d6a5eb9cf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F688568A0>]}
+[0m10:46:51.209005 [info ] [Thread-1 (]: 8 of 8 OK created sql view model silver.stg_sellers ............................ [[32mCREATE VIEW (0 processed)[0m in 3.54s]
+[0m10:46:51.211115 [debug] [Thread-1 (]: Finished running node model.retail_dwh.stg_sellers
+[0m10:46:51.213740 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:46:51.362626 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:46:51.364627 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681' was properly closed.
+[0m10:46:51.366186 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_gold' was properly closed.
+[0m10:46:51.366186 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_silver' was properly closed.
+[0m10:46:51.366186 [debug] [MainThread]: Connection 'model.retail_dwh.stg_sellers' was properly closed.
+[0m10:46:51.368241 [debug] [MainThread]: Connection 'model.retail_dwh.stg_products' was properly closed.
+[0m10:46:51.368241 [debug] [MainThread]: Connection 'model.retail_dwh.stg_reviews' was properly closed.
+[0m10:46:51.370257 [debug] [MainThread]: Connection 'model.retail_dwh.stg_orders' was properly closed.
+[0m10:46:51.370257 [info ] [MainThread]: 
+[0m10:46:51.372275 [info ] [MainThread]: Finished running 8 view models in 0 hours 0 minutes and 12.44 seconds (12.44s).
+[0m10:46:51.376349 [debug] [MainThread]: Command end result
+[0m10:46:51.663641 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:46:51.675301 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:46:51.683090 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:46:51.708702 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\run_results.json
+[0m10:46:51.710186 [info ] [MainThread]: 
+[0m10:46:51.712207 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:46:51.713804 [info ] [MainThread]: 
+[0m10:46:51.713804 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m10:46:51.716872 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 9 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:46:51.720099 [debug] [MainThread]: Command `dbt run` succeeded at 10:46:51.719584 after 20.05 seconds
+[0m10:46:51.720099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F5A9BB140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F58E6E840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F58E6EB70>]}
+[0m10:46:51.722531 [debug] [MainThread]: Flushing usage events
+[0m10:46:54.249033 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:46:58.367175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002427FEDD7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024206C6CDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024206C6F5F0>]}
+
+
+============================== 10:46:58.372041 | 07d7f923-3828-4b6c-a5f1-c7916f318fa2 ==============================
+[0m10:46:58.372041 [info ] [MainThread]: Running with dbt=1.12.0
+[0m10:46:58.374184 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Rafa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select gold', 'log_path': 'C:\\MyPortfolioProject\\data-engineer\\retail-ecommerce-data-warehouse\\dbt_project\\logs'}
+[0m10:47:01.916159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002421242E750>]}
+[0m10:47:02.001298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024202625100>]}
+[0m10:47:02.003307 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m10:47:02.793319 [debug] [MainThread]: checksum: 612f907c6c5953f2ffe0da3f983926661efb1ed24fc992e677fd1adf1223f62b, vars: {}, profile: retail_dwh, target: dev, version: 1.12.0
+[0m10:47:03.335720 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:47:03.336225 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:47:03.337793 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:47:03.354008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212694AA0>]}
+[0m10:47:03.679336 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:47:03.684983 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:47:03.736416 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:47:03.766266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000242126D5F10>]}
+[0m10:47:03.767323 [info ] [MainThread]: Found 16 models, 47 data tests, 8 sources, 945 macros
+[0m10:47:03.768467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002421113E1E0>]}
+[0m10:47:03.774614 [info ] [MainThread]: 
+[0m10:47:03.775689 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:47:03.776783 [info ] [MainThread]: 
+[0m10:47:03.777329 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:47:03.788067 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681'
+[0m10:47:03.789752 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:06.007611 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_gold'
+[0m10:47:06.007611 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:06.010449 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_silver'
+[0m10:47:06.010449 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:08.008600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212DB43B0>]}
+[0m10:47:08.008600 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:47:08.057383 [debug] [Thread-1 (]: Began running node model.retail_dwh.dim_customers
+[0m10:47:08.057383 [info ] [Thread-1 (]: 1 of 8 START sql table model gold.dim_customers ................................ [RUN]
+[0m10:47:08.063027 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.retail_dwh.dim_customers'
+[0m10:47:08.063640 [debug] [Thread-2 (]: Began running node model.retail_dwh.dim_date
+[0m10:47:08.064711 [debug] [Thread-1 (]: Began compiling node model.retail_dwh.dim_customers
+[0m10:47:08.065609 [debug] [Thread-3 (]: Began running node model.retail_dwh.dim_geography
+[0m10:47:08.066137 [debug] [Thread-4 (]: Began running node model.retail_dwh.dim_products
+[0m10:47:08.067367 [info ] [Thread-2 (]: 2 of 8 START sql table model gold.dim_date ..................................... [RUN]
+[0m10:47:08.085640 [info ] [Thread-3 (]: 3 of 8 START sql table model gold.dim_geography ................................ [RUN]
+[0m10:47:08.103207 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dwh.dim_customers"
+[0m10:47:08.104205 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.retail_dwh.dim_date'
+[0m10:47:08.107276 [debug] [Thread-2 (]: Began compiling node model.retail_dwh.dim_date
+[0m10:47:08.106262 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.retail_dwh.dim_geography'
+[0m10:47:08.116387 [debug] [Thread-3 (]: Began compiling node model.retail_dwh.dim_geography
+[0m10:47:08.137379 [debug] [Thread-2 (]: On model.retail_dwh.dim_date: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_date"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast('2020-12-31' as date) as datetime),
+        cast(cast('2016-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m10:47:08.139628 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail_dwh.dim_geography"
+[0m10:47:08.146385 [debug] [Thread-3 (]: Began executing node model.retail_dwh.dim_geography
+[0m10:47:08.139628 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:47:08.102209 [info ] [Thread-4 (]: 4 of 8 START sql table model gold.dim_products ................................. [RUN]
+[0m10:47:08.166295 [debug] [Thread-1 (]: Began executing node model.retail_dwh.dim_customers
+[0m10:47:08.172840 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:47:08.173841 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.retail_dwh.dim_products'
+[0m10:47:08.176366 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:47:08.235382 [debug] [Thread-4 (]: Began compiling node model.retail_dwh.dim_products
+[0m10:47:08.239600 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_dwh.dim_products"
+[0m10:47:08.364179 [debug] [Thread-4 (]: Began executing node model.retail_dwh.dim_products
+[0m10:47:08.367429 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:47:10.856568 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail_dwh.dim_geography"
+[0m10:47:10.857833 [debug] [Thread-3 (]: On model.retail_dwh.dim_geography: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_geography"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_geography`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: dim_geography
+-- Grain: 1 baris = 1 zip_code_prefix (sudah di-dedup dan di-agregasi di silver)
+
+select
+    to_hex(md5(cast(coalesce(cast(zip_code_prefix as string), '_dbt_utils_surrogate_key_null_') as string))) as geography_key,
+
+    zip_code_prefix,
+    city,
+    state,
+    latitude,
+    longitude
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_geolocation`
+    );
+  
+[0m10:47:10.906318 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_dwh.dim_products"
+[0m10:47:10.913444 [debug] [Thread-4 (]: On model.retail_dwh.dim_products: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_products"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: dim_products
+-- Grain: 1 baris = 1 product_id
+-- DQ Decision: product_category_name null (610 produk, 1.85%) → di-coalesce ke 'uncategorized'
+--   agar tidak muncul "(blank)" di chart dashboard. Nilai null asli tersimpan di silver.
+
+select
+    to_hex(md5(cast(coalesce(cast(product_id as string), '_dbt_utils_surrogate_key_null_') as string))) as product_key,
+
+    product_id,
+    coalesce(product_category_name, 'uncategorized') as product_category_name,
+
+    -- Metadata teks produk (nullable — 610 produk tanpa metadata teks)
+    product_name_length,
+    product_description_length,
+    product_photos_qty,
+
+    -- Dimensi fisik (nullable — 2 produk tanpa data dimensi)
+    weight_g,
+    length_cm,
+    height_cm,
+    width_cm
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_products`
+    );
+  
+[0m10:47:10.951791 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dwh.dim_customers"
+[0m10:47:10.951791 [debug] [Thread-1 (]: On model.retail_dwh.dim_customers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_customers"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: dim_customers
+-- Grain: 1 baris = 1 customer_id (transaksi-level, bukan customer unik)
+-- Enrich: join ke stg_geolocation untuk koordinat lat/lng customer (berguna untuk peta distribusi)
+-- Note: customer_unique_id adalah ID pelanggan sesungguhnya (1 pelanggan bisa punya
+--       banyak customer_id kalau belanja lebih dari 1x dari device berbeda)
+
+select
+    to_hex(md5(cast(coalesce(cast(c.customer_id as string), '_dbt_utils_surrogate_key_null_') as string))) as customer_key,
+
+    c.customer_id,
+    c.customer_unique_id,
+    c.zip_code_prefix,
+    c.city,
+    c.state,
+
+    -- Koordinat dari geolocation (berguna untuk peta distribusi customer)
+    g.latitude  as customer_latitude,
+    g.longitude as customer_longitude
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_customers` c
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_geolocation` g
+    on c.zip_code_prefix = g.zip_code_prefix
+    );
+  
+[0m10:47:11.003321 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:82ab77b9-bea4-4307-a8f3-8104ca183227&page=queryresults
+[0m10:47:11.176400 [debug] [Thread-2 (]: SQL status: OK in 0.172 seconds
+[0m10:47:11.611812 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_dwh.dim_date"
+[0m10:47:11.614378 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:8f2fbf06-fec3-408b-8761-f126dd4413c2&page=queryresults
+[0m10:47:11.617358 [debug] [Thread-2 (]: Began executing node model.retail_dwh.dim_date
+[0m10:47:11.695599 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:82e33c18-990a-4573-becf-9a59315359f0&page=queryresults
+[0m10:47:11.736638 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:ec148e33-999e-4561-b879-873ea8209ef7&page=queryresults
+[0m10:47:11.816427 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_dwh.dim_date"
+[0m10:47:11.816427 [debug] [Thread-2 (]: On model.retail_dwh.dim_date: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_date"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: dim_date
+-- Grain: 1 baris = 1 hari kalender
+-- Di-generate via dbt_utils.date_spine (tidak ref() ke tabel manapun)
+-- Rentang: 2016-01-01 s/d 2020-12-31 (covers seluruh rentang transaksi Olist)
+
+with date_spine as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 1826
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('2016-01-01' as date) as datetime),
+        interval row_number() over (order by generated_number) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2020-12-31' as date)
+
+)
+
+select * from filtered
+
+
+)
+
+select
+    to_hex(md5(cast(coalesce(cast(date_day as string), '_dbt_utils_surrogate_key_null_') as string))) as date_key,
+
+    date_day                                              as full_date,
+    extract(year    from date_day)                        as year,
+    extract(quarter from date_day)                        as quarter,
+    'Q' || cast(extract(quarter from date_day) as string) as quarter_name,
+    extract(month   from date_day)                        as month,
+    format_date('%B', date_day)                           as month_name,
+    format_date('%b', date_day)                           as month_short,
+    extract(week    from date_day)                        as week_of_year,
+    extract(day     from date_day)                        as day,
+    extract(dayofweek from date_day)                      as day_of_week,  -- 1=Sun, 7=Sat (BigQuery)
+    format_date('%A', date_day)                           as day_name,
+    format_date('%a', date_day)                           as day_short,
+
+    -- Flags analitik
+    case
+        when extract(dayofweek from date_day) in (1, 7) then true
+        else false
+    end                                                   as is_weekend,
+    case
+        when extract(dayofweek from date_day) between 2 and 6 then true
+        else false
+    end                                                   as is_weekday
+
+from date_spine
+    );
+  
+[0m10:47:12.173370 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:2c6fee13-a5a9-4fdd-b98c-7f06dc5c1fbb&page=queryresults
+[0m10:47:12.806301 [debug] [Thread-3 (]: SQL status: OK in 1.192 seconds
+[0m10:47:12.946567 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024204B7C890>]}
+[0m10:47:12.946567 [info ] [Thread-3 (]: 3 of 8 OK created sql table model gold.dim_geography ........................... [[32mCREATE TABLE (19.0k rows, 38.7 MiB processed)[0m in 4.84s]
+[0m10:47:12.949850 [debug] [Thread-3 (]: Finished running node model.retail_dwh.dim_geography
+[0m10:47:12.950593 [debug] [Thread-3 (]: Began running node model.retail_dwh.dim_sellers
+[0m10:47:12.951173 [info ] [Thread-3 (]: 5 of 8 START sql table model gold.dim_sellers .................................. [RUN]
+[0m10:47:12.951740 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.retail_dwh.dim_geography, now model.retail_dwh.dim_sellers)
+[0m10:47:12.952374 [debug] [Thread-3 (]: Began compiling node model.retail_dwh.dim_sellers
+[0m10:47:12.956815 [debug] [Thread-3 (]: Writing injected SQL for node "model.retail_dwh.dim_sellers"
+[0m10:47:12.961499 [debug] [Thread-3 (]: Began executing node model.retail_dwh.dim_sellers
+[0m10:47:12.964815 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:47:13.085790 [debug] [Thread-4 (]: SQL status: OK in 1.389 seconds
+[0m10:47:13.265521 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212BC3E90>]}
+[0m10:47:13.266557 [info ] [Thread-4 (]: 4 of 8 OK created sql table model gold.dim_products ............................ [[32mCREATE TABLE (33.0k rows, 3.3 MiB processed)[0m in 5.09s]
+[0m10:47:13.268014 [debug] [Thread-4 (]: Finished running node model.retail_dwh.dim_products
+[0m10:47:13.760816 [debug] [Thread-1 (]: SQL status: OK in 2.023 seconds
+[0m10:47:13.901596 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212F70A10>]}
+[0m10:47:13.903603 [info ] [Thread-1 (]: 1 of 8 OK created sql table model gold.dim_customers ........................... [[32mCREATE TABLE (99.4k rows, 31.6 MiB processed)[0m in 5.84s]
+[0m10:47:13.903603 [debug] [Thread-1 (]: Finished running node model.retail_dwh.dim_customers
+[0m10:47:14.167314 [debug] [Thread-2 (]: SQL status: OK in 1.992 seconds
+[0m10:47:14.268234 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212F91370>]}
+[0m10:47:14.268234 [info ] [Thread-2 (]: 2 of 8 OK created sql table model gold.dim_date ................................ [[32mCREATE TABLE (1.8k rows, 0 processed)[0m in 6.16s]
+[0m10:47:14.269562 [debug] [Thread-2 (]: Finished running node model.retail_dwh.dim_date
+[0m10:47:14.270632 [debug] [Thread-4 (]: Began running node model.retail_dwh.fact_payments
+[0m10:47:14.271687 [debug] [Thread-1 (]: Began running node model.retail_dwh.fact_reviews
+[0m10:47:14.272302 [info ] [Thread-4 (]: 6 of 8 START sql table model gold.fact_payments ................................ [RUN]
+[0m10:47:14.273370 [info ] [Thread-1 (]: 7 of 8 START sql table model gold.fact_reviews ................................. [RUN]
+[0m10:47:14.275165 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.retail_dwh.dim_products, now model.retail_dwh.fact_payments)
+[0m10:47:14.276070 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_dwh.dim_customers, now model.retail_dwh.fact_reviews)
+[0m10:47:14.277382 [debug] [Thread-4 (]: Began compiling node model.retail_dwh.fact_payments
+[0m10:47:14.277921 [debug] [Thread-1 (]: Began compiling node model.retail_dwh.fact_reviews
+[0m10:47:14.284694 [debug] [Thread-4 (]: Writing injected SQL for node "model.retail_dwh.fact_payments"
+[0m10:47:14.286891 [debug] [Thread-3 (]: Writing runtime sql for node "model.retail_dwh.dim_sellers"
+[0m10:47:14.293642 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dwh.fact_reviews"
+[0m10:47:14.296147 [debug] [Thread-3 (]: On model.retail_dwh.dim_sellers: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.dim_sellers"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_sellers`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: dim_sellers
+-- Grain: 1 baris = 1 seller_id
+-- Enrich: join ke stg_geolocation untuk koordinat lat/lng seller (berguna untuk peta distribusi seller)
+
+select
+    to_hex(md5(cast(coalesce(cast(s.seller_id as string), '_dbt_utils_surrogate_key_null_') as string))) as seller_key,
+
+    s.seller_id,
+    s.zip_code_prefix,
+    s.city,
+    s.state,
+
+    -- Koordinat dari geolocation (berguna untuk peta distribusi seller)
+    g.latitude  as seller_latitude,
+    g.longitude as seller_longitude
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_sellers` s
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_geolocation` g
+    on s.zip_code_prefix = g.zip_code_prefix
+    );
+  
+[0m10:47:14.299180 [debug] [Thread-4 (]: Began executing node model.retail_dwh.fact_payments
+[0m10:47:14.302178 [debug] [Thread-4 (]: Writing runtime sql for node "model.retail_dwh.fact_payments"
+[0m10:47:14.304178 [debug] [Thread-1 (]: Began executing node model.retail_dwh.fact_reviews
+[0m10:47:14.307792 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:47:14.309490 [debug] [Thread-4 (]: On model.retail_dwh.fact_payments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.fact_payments"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_payments`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: fact_payments
+-- Grain: 1 baris = 1 payment record
+--        (1 order bisa punya >1 baris jika split payment, diidentifikasi via payment_sequential)
+--
+-- Join ke fact_sales: gunakan order_id sebagai bridge key (payments di level order,
+-- bukan order_item). Untuk drill-down ke item-level, join fact_payments → fact_sales
+-- via order_id.
+--
+-- KOLOM:
+--   - payment_key   : surrogate key unik per payment record
+--   - customer_key  : FK ke dim_customers
+--   - order_date_key: FK ke dim_date (tanggal order, bukan tanggal pembayaran)
+--   - order_id      : degenerate dimension — bridge key ke fact_sales
+
+select
+    to_hex(md5(cast(coalesce(cast(op.order_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(op.payment_sequential as string), '_dbt_utils_surrogate_key_null_') as string))) as payment_key,
+
+    -- Foreign Keys
+    dc.customer_key,
+    dd.date_key                   as order_date_key,
+
+    -- Degenerate Dimensions / Bridge Keys
+    op.order_id,
+    op.payment_sequential,
+
+    -- Attributes
+    op.payment_type,
+    op.payment_installments,
+
+    -- Measures
+    op.payment_value
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_order_payments` op
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_orders` o
+    on op.order_id = o.order_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers` dc
+    on o.customer_id = dc.customer_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date` dd
+    on date(cast(o.order_date as timestamp)) = dd.full_date
+    );
+  
+[0m10:47:14.366203 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:47:14.966518 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:c66eda8f-27de-4078-8fcf-bb0675d12f12&page=queryresults
+[0m10:47:16.135442 [debug] [Thread-3 (]: SQL status: OK in 1.168 seconds
+[0m10:47:16.305428 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212F97650>]}
+[0m10:47:16.307414 [info ] [Thread-3 (]: 5 of 8 OK created sql table model gold.dim_sellers ............................. [[32mCREATE TABLE (3.1k rows, 23.1 MiB processed)[0m in 3.35s]
+[0m10:47:16.308087 [debug] [Thread-3 (]: Finished running node model.retail_dwh.dim_sellers
+[0m10:47:16.310116 [debug] [Thread-2 (]: Began running node model.retail_dwh.fact_sales
+[0m10:47:16.312127 [info ] [Thread-2 (]: 8 of 8 START sql table model gold.fact_sales ................................... [RUN]
+[0m10:47:16.312127 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.retail_dwh.dim_date, now model.retail_dwh.fact_sales)
+[0m10:47:16.312127 [debug] [Thread-2 (]: Began compiling node model.retail_dwh.fact_sales
+[0m10:47:16.323233 [debug] [Thread-2 (]: Writing injected SQL for node "model.retail_dwh.fact_sales"
+[0m10:47:16.328172 [debug] [Thread-2 (]: Began executing node model.retail_dwh.fact_sales
+[0m10:47:16.332193 [debug] [Thread-2 (]: Writing runtime sql for node "model.retail_dwh.fact_sales"
+[0m10:47:16.335713 [debug] [Thread-2 (]: On model.retail_dwh.fact_sales: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.fact_sales"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: fact_sales
+-- Grain: 1 baris = 1 order_item (produk spesifik dalam 1 order)
+--
+-- CATATAN ANALISIS (hasil DQ profiling):
+--   ~775 order di source TIDAK punya order_item sama sekali (dominan berstatus
+--   unavailable/canceled/created — order gagal sebelum ada item terkonfirmasi).
+--   Order ini tidak muncul di fact_sales karena grain-nya per order_item.
+--   Ini WAJAR — tidak ada order 'delivered' yang hilang.
+--   Untuk analisis funnel/conversion (termasuk order gagal): pakai stg_orders langsung.
+--
+-- KOLOM ANALITIK BARU:
+--   - customer_geography_key : join ke dim_geography untuk peta penjualan per wilayah
+--   - delivered_days          : total hari dari order → diterima customer
+--   - days_early_or_late      : +N = N hari lebih cepat dari estimasi, -N = N hari terlambat
+--   - is_late_delivery        : flag keterlambatan (delivered > estimated)
+--   - is_weekend_order        : flag order di akhir pekan (Sabtu/Minggu)
+
+select
+    to_hex(md5(cast(coalesce(cast(oi.order_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(oi.order_item_id as string), '_dbt_utils_surrogate_key_null_') as string))) as sales_key,
+
+    -- Foreign Keys
+    dc.customer_key,
+    dp.product_key,
+    ds.seller_key,
+    dd.date_key                                       as order_date_key,
+    dg.geography_key                                  as customer_geography_key,
+
+    -- Degenerate Dimensions
+    oi.order_id,
+    oi.order_item_id,
+    o.order_status,
+
+    -- Measures: Revenue
+    oi.price,
+    oi.freight_value,
+    oi.price + oi.freight_value                       as total_amount,
+
+    -- Measures: Delivery Performance
+    date_diff(
+        cast(o.delivered_customer_at as date),
+        cast(o.order_date as date),
+        day
+    )                                                 as delivered_days,
+    -- Positif = lebih cepat dari estimasi, negatif = terlambat
+    date_diff(
+        cast(o.estimated_delivery_date as date),
+        cast(o.delivered_customer_at as date),
+        day
+    )                                                 as days_early_or_late,
+    case
+        when o.delivered_customer_at is not null
+         and o.delivered_customer_at > o.estimated_delivery_date
+        then true
+        else false
+    end                                               as is_late_delivery,
+
+    -- Measures: Order Behavior
+    case
+        when extract(dayofweek from o.order_date) in (1, 7) then true
+        else false
+    end                                               as is_weekend_order
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_order_items` oi
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_orders` o
+    on oi.order_id = o.order_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers` dc
+    on o.customer_id = dc.customer_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products` dp
+    on oi.product_id = dp.product_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_sellers` ds
+    on oi.seller_id = ds.seller_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date` dd
+    on cast(o.order_date as date) = dd.full_date
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_geography` dg
+    on dc.zip_code_prefix = dg.zip_code_prefix
+    );
+  
+[0m10:47:16.337388 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:47:16.782552 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dwh.fact_reviews"
+[0m10:47:16.785575 [debug] [Thread-1 (]: On model.retail_dwh.fact_reviews: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "model.retail_dwh.fact_reviews"} */
+
+  
+    
+
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_reviews`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Gold: fact_reviews
+-- Grain: 1 baris = 1 review (sudah di-dedup di silver via QUALIFY ROW_NUMBER)
+--
+-- Join ke fact_sales: gunakan order_id sebagai bridge key.
+-- Catatan: 1 order bisa punya banyak order_item (baris di fact_sales),
+-- sehingga join fact_reviews → fact_sales via order_id bisa menghasilkan fanout.
+-- Gunakan dengan aggregasi (group by order_id) saat join ke fact_sales.
+--
+-- KOLOM ANALITIK BARU:
+--   - review_answer_days : jumlah hari dari review dibuat → dijawab seller
+--                          (proxy untuk kecepatan respons seller terhadap customer)
+
+select
+    to_hex(md5(cast(coalesce(cast(r.review_id as string), '_dbt_utils_surrogate_key_null_') as string))) as review_key,
+
+    -- Foreign Keys
+    dc.customer_key,
+    dd.date_key                                         as review_date_key,
+
+    -- Degenerate Dimensions / Bridge Keys
+    r.review_id,
+    r.order_id,
+
+    -- Measures: Satisfaction
+    r.review_score,
+
+    -- Measures: Response Speed
+    date_diff(
+        date(cast(r.answered_at as timestamp)),
+        date(cast(r.created_at as timestamp)),
+        day
+    )                                                   as review_answer_days,
+
+    -- Attributes (nullable — user tidak wajib isi teks review)
+    r.comment_title,
+    r.comment_message,
+
+    -- Timestamps
+    r.created_at   as review_created_at,
+    r.answered_at  as review_answered_at
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_reviews` r
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_orders` o
+    on r.order_id = o.order_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers` dc
+    on o.customer_id = dc.customer_id
+left join `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date` dd
+    on date(cast(r.created_at as timestamp)) = dd.full_date
+    );
+  
+[0m10:47:17.426944 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:b3e3a4bc-35cd-4132-ad68-6745e5bd4f97&page=queryresults
+[0m10:47:17.609266 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:77134e20-82e7-4c84-a1d7-d5f522455a21&page=queryresults
+[0m10:47:18.815614 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:1ab0e445-f3bb-43b7-bca8-e6d7e45d7ea3&page=queryresults
+[0m10:47:19.971841 [debug] [Thread-1 (]: SQL status: OK in 2.361 seconds
+[0m10:47:20.037330 [debug] [Thread-4 (]: SQL status: OK in 2.609 seconds
+[0m10:47:20.107622 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002421415A390>]}
+[0m10:47:20.109446 [info ] [Thread-1 (]: 7 of 8 OK created sql table model gold.fact_reviews ............................ [[32mCREATE TABLE (98.4k rows, 27.9 MiB processed)[0m in 5.83s]
+[0m10:47:20.110344 [debug] [Thread-1 (]: Finished running node model.retail_dwh.fact_reviews
+[0m10:47:20.194046 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002421417D940>]}
+[0m10:47:20.194046 [info ] [Thread-4 (]: 6 of 8 OK created sql table model gold.fact_payments ........................... [[32mCREATE TABLE (103.9k rows, 20.6 MiB processed)[0m in 5.92s]
+[0m10:47:20.195561 [debug] [Thread-4 (]: Finished running node model.retail_dwh.fact_payments
+[0m10:47:22.238511 [debug] [Thread-2 (]: SQL status: OK in 3.424 seconds
+[0m10:47:22.356221 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07d7f923-3828-4b6c-a5f1-c7916f318fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024212F97740>]}
+[0m10:47:22.365524 [info ] [Thread-2 (]: 8 of 8 OK created sql table model gold.fact_sales .............................. [[32mCREATE TABLE (112.7k rows, 33.5 MiB processed)[0m in 6.04s]
+[0m10:47:22.366556 [debug] [Thread-2 (]: Finished running node model.retail_dwh.fact_sales
+[0m10:47:22.369306 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:47:22.420918 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:47:22.420918 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681' was properly closed.
+[0m10:47:22.420918 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_gold' was properly closed.
+[0m10:47:22.420918 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_silver' was properly closed.
+[0m10:47:22.424000 [debug] [MainThread]: Connection 'model.retail_dwh.fact_reviews' was properly closed.
+[0m10:47:22.424000 [debug] [MainThread]: Connection 'model.retail_dwh.fact_sales' was properly closed.
+[0m10:47:22.424000 [debug] [MainThread]: Connection 'model.retail_dwh.dim_sellers' was properly closed.
+[0m10:47:22.425563 [debug] [MainThread]: Connection 'model.retail_dwh.fact_payments' was properly closed.
+[0m10:47:22.426112 [info ] [MainThread]: 
+[0m10:47:22.426679 [info ] [MainThread]: Finished running 8 table models in 0 hours 0 minutes and 18.65 seconds (18.65s).
+[0m10:47:22.429487 [debug] [MainThread]: Command end result
+[0m10:47:22.522677 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:47:22.529115 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:47:22.532862 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:47:22.540075 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\run_results.json
+[0m10:47:22.540075 [info ] [MainThread]: 
+[0m10:47:22.540075 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:47:22.545589 [info ] [MainThread]: 
+[0m10:47:22.546115 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=8
+[0m10:47:22.548328 [debug] [MainThread]: Command `dbt run` succeeded at 10:47:22.548328 after 24.36 seconds
+[0m10:47:22.549158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024206DF9D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024206E17410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024205250170>]}
+[0m10:47:22.549714 [debug] [MainThread]: Flushing usage events
+[0m10:47:24.337834 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:48:33.316371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC9487380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC99AC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC9485160>]}
+
+
+============================== 10:48:33.320506 | d7850b3d-28ad-4424-882d-d68fd3a95b52 ==============================
+[0m10:48:33.320506 [info ] [MainThread]: Running with dbt=1.12.0
+[0m10:48:33.320506 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rafa\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test --select gold', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\MyPortfolioProject\\data-engineer\\retail-ecommerce-data-warehouse\\dbt_project\\logs'}
+[0m10:48:36.548686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD6D0C2F0>]}
+[0m10:48:36.655361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD6B0CE90>]}
+[0m10:48:36.657478 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m10:48:37.732381 [debug] [MainThread]: checksum: 612f907c6c5953f2ffe0da3f983926661efb1ed24fc992e677fd1adf1223f62b, vars: {}, profile: retail_dwh, target: dev, version: 1.12.0
+[0m10:48:38.247400 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:48:38.248754 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:48:38.248754 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:48:38.277375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD6EACC50>]}
+[0m10:48:38.577349 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:48:38.584971 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:48:38.640873 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:48:38.683901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD7809E80>]}
+[0m10:48:38.683901 [info ] [MainThread]: Found 16 models, 47 data tests, 8 sources, 945 macros
+[0m10:48:38.685437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD784A210>]}
+[0m10:48:38.689555 [info ] [MainThread]: 
+[0m10:48:38.690551 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:48:38.690551 [info ] [MainThread]: 
+[0m10:48:38.691556 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:48:38.698200 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_silver'
+[0m10:48:38.698200 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:38.699710 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_qwiklabs-gcp-03-018d48a9d681_gold'
+[0m10:48:38.700375 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:40.820069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7850b3d-28ad-4424-882d-d68fd3a95b52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AD752CD40>]}
+[0m10:48:40.820069 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:48:40.871317 [debug] [Thread-1 (]: Began running node test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411
+[0m10:48:40.871317 [debug] [Thread-2 (]: Began running node test.retail_dwh.not_null_dim_date_date_key.881d0a31b6
+[0m10:48:40.872710 [debug] [Thread-3 (]: Began running node test.retail_dwh.not_null_dim_geography_geography_key.c102675438
+[0m10:48:40.872710 [info ] [Thread-1 (]: 1 of 18 START test not_null_dim_customers_customer_key ......................... [RUN]
+[0m10:48:40.872710 [debug] [Thread-4 (]: Began running node test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a
+[0m10:48:40.872710 [info ] [Thread-2 (]: 2 of 18 START test not_null_dim_date_date_key .................................. [RUN]
+[0m10:48:40.875682 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411'
+[0m10:48:40.872710 [info ] [Thread-3 (]: 3 of 18 START test not_null_dim_geography_geography_key ........................ [RUN]
+[0m10:48:40.876235 [info ] [Thread-4 (]: 4 of 18 START test not_null_dim_products_product_key ........................... [RUN]
+[0m10:48:40.877102 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.retail_dwh.not_null_dim_date_date_key.881d0a31b6'
+[0m10:48:40.877102 [debug] [Thread-1 (]: Began compiling node test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411
+[0m10:48:40.877102 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.retail_dwh.not_null_dim_geography_geography_key.c102675438'
+[0m10:48:40.877102 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a'
+[0m10:48:40.877102 [debug] [Thread-2 (]: Began compiling node test.retail_dwh.not_null_dim_date_date_key.881d0a31b6
+[0m10:48:40.895396 [debug] [Thread-3 (]: Began compiling node test.retail_dwh.not_null_dim_geography_geography_key.c102675438
+[0m10:48:40.908585 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411"
+[0m10:48:40.908585 [debug] [Thread-4 (]: Began compiling node test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a
+[0m10:48:40.918625 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_dwh.not_null_dim_date_date_key.881d0a31b6"
+[0m10:48:40.931328 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_dwh.not_null_dim_geography_geography_key.c102675438"
+[0m10:48:40.938834 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a"
+[0m10:48:40.943189 [debug] [Thread-1 (]: Began executing node test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411
+[0m10:48:40.961399 [debug] [Thread-2 (]: Began executing node test.retail_dwh.not_null_dim_date_date_key.881d0a31b6
+[0m10:48:40.972686 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411"
+[0m10:48:40.976912 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_dwh.not_null_dim_date_date_key.881d0a31b6"
+[0m10:48:40.978275 [debug] [Thread-3 (]: Began executing node test.retail_dwh.not_null_dim_geography_geography_key.c102675438
+[0m10:48:40.980324 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_dwh.not_null_dim_geography_geography_key.c102675438"
+[0m10:48:40.981365 [debug] [Thread-4 (]: Began executing node test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a
+[0m10:48:40.983499 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a"
+[0m10:48:40.984502 [debug] [Thread-1 (]: On test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:40.985506 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:48:41.028702 [debug] [Thread-2 (]: On test.retail_dwh.not_null_dim_date_date_key.881d0a31b6: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_dim_date_date_key.881d0a31b6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date`
+where date_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:41.028702 [debug] [Thread-4 (]: On test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
+where product_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:41.028702 [debug] [Thread-3 (]: On test.retail_dwh.not_null_dim_geography_geography_key.c102675438: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_dim_geography_geography_key.c102675438"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select geography_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_geography`
+where geography_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:41.028702 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:48:41.028702 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:48:41.028702 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:48:43.545548 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:d3861853-cb5a-4e4c-b7c9-27d9a7015fea&page=queryresults
+[0m10:48:43.709104 [debug] [Thread-1 (]: SQL status: OK in 0.163 seconds
+[0m10:48:43.797496 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:b2762979-4759-4f4e-9efc-ee4c557fddf9&page=queryresults
+[0m10:48:43.805316 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:449a271f-5371-4c00-ad30-8ed6420e23cf&page=queryresults
+[0m10:48:43.833259 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:898508a9-ef5d-4f0c-aa6f-0128f4ac1e10&page=queryresults
+[0m10:48:43.933284 [debug] [Thread-2 (]: SQL status: OK in 0.135 seconds
+[0m10:48:43.934285 [debug] [Thread-3 (]: SQL status: OK in 0.128 seconds
+[0m10:48:43.949916 [debug] [Thread-4 (]: SQL status: OK in 0.118 seconds
+[0m10:48:44.150372 [info ] [Thread-1 (]: 1 of 18 PASS not_null_dim_customers_customer_key ............................... [[32mPASS[0m in 3.27s]
+[0m10:48:44.150372 [debug] [Thread-1 (]: Finished running node test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411
+[0m10:48:44.150372 [debug] [Thread-1 (]: Began running node test.retail_dwh.not_null_dim_sellers_seller_key.760876479e
+[0m10:48:44.150372 [info ] [Thread-1 (]: 5 of 18 START test not_null_dim_sellers_seller_key ............................. [RUN]
+[0m10:48:44.154778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_dim_customers_customer_key.4bebfb3411, now test.retail_dwh.not_null_dim_sellers_seller_key.760876479e)
+[0m10:48:44.155288 [debug] [Thread-1 (]: Began compiling node test.retail_dwh.not_null_dim_sellers_seller_key.760876479e
+[0m10:48:44.167491 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_dwh.not_null_dim_sellers_seller_key.760876479e"
+[0m10:48:44.174168 [debug] [Thread-1 (]: Began executing node test.retail_dwh.not_null_dim_sellers_seller_key.760876479e
+[0m10:48:44.177273 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_dwh.not_null_dim_sellers_seller_key.760876479e"
+[0m10:48:44.171168 [info ] [Thread-4 (]: 4 of 18 PASS not_null_dim_products_product_key ................................. [[32mPASS[0m in 3.29s]
+[0m10:48:44.178285 [debug] [Thread-4 (]: Finished running node test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a
+[0m10:48:44.179288 [debug] [Thread-4 (]: Began running node test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5
+[0m10:48:44.181285 [debug] [Thread-1 (]: On test.retail_dwh.not_null_dim_sellers_seller_key.760876479e: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_dim_sellers_seller_key.760876479e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select seller_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_sellers`
+where seller_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:44.182287 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:44.180287 [info ] [Thread-4 (]: 6 of 18 START test not_null_fact_payments_payment_key .......................... [RUN]
+[0m10:48:44.183283 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_dim_products_product_key.a98dfddb9a, now test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5)
+[0m10:48:44.253765 [debug] [Thread-4 (]: Began compiling node test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5
+[0m10:48:44.271517 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5"
+[0m10:48:44.277519 [info ] [Thread-3 (]: 3 of 18 PASS not_null_dim_geography_geography_key .............................. [[32mPASS[0m in 3.40s]
+[0m10:48:44.282536 [debug] [Thread-3 (]: Finished running node test.retail_dwh.not_null_dim_geography_geography_key.c102675438
+[0m10:48:44.286551 [debug] [Thread-3 (]: Began running node test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20
+[0m10:48:44.286040 [info ] [Thread-2 (]: 2 of 18 PASS not_null_dim_date_date_key ........................................ [[32mPASS[0m in 3.41s]
+[0m10:48:44.290129 [debug] [Thread-2 (]: Finished running node test.retail_dwh.not_null_dim_date_date_key.881d0a31b6
+[0m10:48:44.291130 [debug] [Thread-4 (]: Began executing node test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5
+[0m10:48:44.292038 [debug] [Thread-2 (]: Began running node test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530
+[0m10:48:44.288114 [info ] [Thread-3 (]: 7 of 18 START test not_null_fact_reviews_review_key ............................ [RUN]
+[0m10:48:44.296476 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5"
+[0m10:48:44.298503 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_dim_geography_geography_key.c102675438, now test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20)
+[0m10:48:44.299501 [debug] [Thread-3 (]: Began compiling node test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20
+[0m10:48:44.297488 [info ] [Thread-2 (]: 8 of 18 START test not_null_fact_sales_sales_key ............................... [RUN]
+[0m10:48:44.312839 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_dim_date_date_key.881d0a31b6, now test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530)
+[0m10:48:44.320436 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20"
+[0m10:48:44.320436 [debug] [Thread-2 (]: Began compiling node test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530
+[0m10:48:44.335473 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530"
+[0m10:48:44.336489 [debug] [Thread-4 (]: On test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select payment_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_payments`
+where payment_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:44.338010 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:48:44.408408 [debug] [Thread-2 (]: Began executing node test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530
+[0m10:48:44.409460 [debug] [Thread-3 (]: Began executing node test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20
+[0m10:48:44.413460 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530"
+[0m10:48:44.417487 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20"
+[0m10:48:44.421026 [debug] [Thread-3 (]: On test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select review_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_reviews`
+where review_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:44.422028 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:48:44.551512 [debug] [Thread-2 (]: On test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sales_key
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
+where sales_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:44.551512 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:48:46.814314 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:6c2a1c13-c703-412e-a5a4-22b9ab16608b&page=queryresults
+[0m10:48:46.896520 [debug] [Thread-4 (]: SQL status: OK in 0.081 seconds
+[0m10:48:46.923650 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:928e7cd2-d33d-42b8-9b23-27539a6b10dc&page=queryresults
+[0m10:48:47.081859 [debug] [Thread-1 (]: SQL status: OK in 0.157 seconds
+[0m10:48:47.217258 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:b00a00cb-4a92-4ab8-a384-6cccebb56cf7&page=queryresults
+[0m10:48:47.310168 [info ] [Thread-4 (]: 6 of 18 PASS not_null_fact_payments_payment_key ................................ [[32mPASS[0m in 3.13s]
+[0m10:48:47.312396 [debug] [Thread-4 (]: Finished running node test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5
+[0m10:48:47.312396 [debug] [Thread-4 (]: Began running node test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5
+[0m10:48:47.312396 [info ] [Thread-4 (]: 9 of 18 START test relationships_fact_sales_customer_key__customer_key__ref_dim_customers_  [RUN]
+[0m10:48:47.315450 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_fact_payments_payment_key.6556c112a5, now test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5)
+[0m10:48:47.315450 [debug] [Thread-4 (]: Began compiling node test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5
+[0m10:48:47.344047 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5"
+[0m10:48:47.346174 [debug] [Thread-4 (]: Began executing node test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5
+[0m10:48:47.349204 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5"
+[0m10:48:47.350205 [debug] [Thread-4 (]: On test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_key as from_field
+    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
+    where customer_key is not null
+),
+
+parent as (
+    select customer_key as to_field
+    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:47.351504 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:48:47.407940 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:78d3af75-9d20-4fd9-8816-e630edd31b9b&page=queryresults
+[0m10:48:47.407940 [info ] [Thread-1 (]: 5 of 18 PASS not_null_dim_sellers_seller_key ................................... [[32mPASS[0m in 3.25s]
+[0m10:48:47.414223 [debug] [Thread-1 (]: Finished running node test.retail_dwh.not_null_dim_sellers_seller_key.760876479e
+[0m10:48:47.414223 [debug] [Thread-1 (]: Began running node test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf
+[0m10:48:47.416294 [info ] [Thread-1 (]: 10 of 18 START test relationships_fact_sales_product_key__product_key__ref_dim_products_  [RUN]
+[0m10:48:47.417917 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_dim_sellers_seller_key.760876479e, now test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf)
+[0m10:48:47.418740 [debug] [Thread-1 (]: Began compiling node test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf
+[0m10:48:47.438894 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf"
+[0m10:48:47.441270 [debug] [Thread-2 (]: SQL status: OK in 0.222 seconds
+[0m10:48:47.443267 [debug] [Thread-1 (]: Began executing node test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf
+[0m10:48:47.447070 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf"
+[0m10:48:47.452469 [debug] [Thread-1 (]: On test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_key as from_field
+    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
+    where product_key is not null
+),
+
+parent as (
+    select product_key as to_field
+    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:47.453695 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:47.605832 [debug] [Thread-3 (]: SQL status: OK in 0.193 seconds
+[0m10:48:47.758116 [info ] [Thread-2 (]: 8 of 18 PASS not_null_fact_sales_sales_key ..................................... [[32mPASS[0m in 3.45s]
+[0m10:48:47.758116 [debug] [Thread-2 (]: Finished running node test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530
+[0m10:48:47.758116 [debug] [Thread-2 (]: Began running node test.retail_dwh.unique_dim_customers_customer_key.ad8156656e
+[0m10:48:47.758116 [info ] [Thread-2 (]: 11 of 18 START test unique_dim_customers_customer_key .......................... [RUN]
+[0m10:48:47.758116 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_fact_sales_sales_key.2e48edf530, now test.retail_dwh.unique_dim_customers_customer_key.ad8156656e)
+[0m10:48:47.764729 [debug] [Thread-2 (]: Began compiling node test.retail_dwh.unique_dim_customers_customer_key.ad8156656e
+[0m10:48:47.776485 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_dwh.unique_dim_customers_customer_key.ad8156656e"
+[0m10:48:47.776485 [debug] [Thread-2 (]: Began executing node test.retail_dwh.unique_dim_customers_customer_key.ad8156656e
+[0m10:48:47.776485 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_dwh.unique_dim_customers_customer_key.ad8156656e"
+[0m10:48:47.785511 [debug] [Thread-2 (]: On test.retail_dwh.unique_dim_customers_customer_key.ad8156656e: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_dim_customers_customer_key.ad8156656e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select customer_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
+  where customer_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:47.787593 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:48:47.993493 [info ] [Thread-3 (]: 7 of 18 PASS not_null_fact_reviews_review_key .................................. [[32mPASS[0m in 3.69s]
+[0m10:48:47.995500 [debug] [Thread-3 (]: Finished running node test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20
+[0m10:48:47.996525 [debug] [Thread-3 (]: Began running node test.retail_dwh.unique_dim_date_date_key.0869fd48f9
+[0m10:48:47.996525 [info ] [Thread-3 (]: 12 of 18 START test unique_dim_date_date_key ................................... [RUN]
+[0m10:48:47.997651 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_dwh.not_null_fact_reviews_review_key.5f7b22bd20, now test.retail_dwh.unique_dim_date_date_key.0869fd48f9)
+[0m10:48:47.997651 [debug] [Thread-3 (]: Began compiling node test.retail_dwh.unique_dim_date_date_key.0869fd48f9
+[0m10:48:48.013020 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_dwh.unique_dim_date_date_key.0869fd48f9"
+[0m10:48:48.014022 [debug] [Thread-3 (]: Began executing node test.retail_dwh.unique_dim_date_date_key.0869fd48f9
+[0m10:48:48.018057 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_dwh.unique_dim_date_date_key.0869fd48f9"
+[0m10:48:48.020347 [debug] [Thread-3 (]: On test.retail_dwh.unique_dim_date_date_key.0869fd48f9: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_dim_date_date_key.0869fd48f9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select date_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date`
+  where date_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:48.021666 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:48:49.446233 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:fb693ccd-25c4-45ce-b811-5ddfeac56388&page=queryresults
+[0m10:48:49.461270 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:b1bdf621-4818-4ea6-a194-654b380ed588&page=queryresults
+[0m10:48:49.557489 [debug] [Thread-4 (]: SQL status: OK in 0.094 seconds
+[0m10:48:49.573563 [debug] [Thread-1 (]: SQL status: OK in 0.126 seconds
+[0m10:48:49.787417 [info ] [Thread-1 (]: 10 of 18 PASS relationships_fact_sales_product_key__product_key__ref_dim_products_  [[32mPASS[0m in 2.37s]
+[0m10:48:49.787417 [debug] [Thread-1 (]: Finished running node test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf
+[0m10:48:49.794436 [debug] [Thread-1 (]: Began running node test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1
+[0m10:48:49.795449 [info ] [Thread-1 (]: 13 of 18 START test unique_dim_geography_geography_key ......................... [RUN]
+[0m10:48:49.796491 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_dwh.relationships_fact_sales_product_key__product_key__ref_dim_products_.43a302dbdf, now test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1)
+[0m10:48:49.798012 [debug] [Thread-1 (]: Began compiling node test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1
+[0m10:48:49.823914 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1"
+[0m10:48:49.829985 [debug] [Thread-1 (]: Began executing node test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1
+[0m10:48:49.837474 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1"
+[0m10:48:49.839531 [debug] [Thread-1 (]: On test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select geography_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_geography`
+  where geography_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:49.839531 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:49.895364 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:cadc73c1-e275-4dd0-a1e3-5e8398c06217&page=queryresults
+[0m10:48:49.897434 [info ] [Thread-4 (]: 9 of 18 PASS relationships_fact_sales_customer_key__customer_key__ref_dim_customers_  [[32mPASS[0m in 2.58s]
+[0m10:48:49.900334 [debug] [Thread-4 (]: Finished running node test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5
+[0m10:48:49.900334 [debug] [Thread-4 (]: Began running node test.retail_dwh.unique_dim_products_product_key.5837b56652
+[0m10:48:49.900334 [info ] [Thread-4 (]: 14 of 18 START test unique_dim_products_product_key ............................ [RUN]
+[0m10:48:49.903008 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.retail_dwh.relationships_fact_sales_customer_key__customer_key__ref_dim_customers_.0902d0ddb5, now test.retail_dwh.unique_dim_products_product_key.5837b56652)
+[0m10:48:49.904203 [debug] [Thread-4 (]: Began compiling node test.retail_dwh.unique_dim_products_product_key.5837b56652
+[0m10:48:49.910514 [debug] [Thread-4 (]: Writing injected SQL for node "test.retail_dwh.unique_dim_products_product_key.5837b56652"
+[0m10:48:49.912497 [debug] [Thread-4 (]: Began executing node test.retail_dwh.unique_dim_products_product_key.5837b56652
+[0m10:48:49.914692 [debug] [Thread-4 (]: Writing runtime sql for node "test.retail_dwh.unique_dim_products_product_key.5837b56652"
+[0m10:48:49.916221 [debug] [Thread-4 (]: On test.retail_dwh.unique_dim_products_product_key.5837b56652: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_dim_products_product_key.5837b56652"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select product_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
+  where product_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:49.917225 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:48:49.967355 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:7d95a6ad-1a72-4d17-8ff1-5cbeb3d54f3f&page=queryresults
+[0m10:48:50.056128 [debug] [Thread-3 (]: SQL status: OK in 0.088 seconds
+[0m10:48:50.067382 [debug] [Thread-2 (]: SQL status: OK in 0.170 seconds
+[0m10:48:50.389276 [info ] [Thread-2 (]: 11 of 18 PASS unique_dim_customers_customer_key ................................ [[32mPASS[0m in 2.63s]
+[0m10:48:50.389276 [debug] [Thread-2 (]: Finished running node test.retail_dwh.unique_dim_customers_customer_key.ad8156656e
+[0m10:48:50.389276 [debug] [Thread-2 (]: Began running node test.retail_dwh.unique_dim_sellers_seller_key.6297349530
+[0m10:48:50.389276 [info ] [Thread-2 (]: 15 of 18 START test unique_dim_sellers_seller_key .............................. [RUN]
+[0m10:48:50.395360 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_dwh.unique_dim_customers_customer_key.ad8156656e, now test.retail_dwh.unique_dim_sellers_seller_key.6297349530)
+[0m10:48:50.396382 [debug] [Thread-2 (]: Began compiling node test.retail_dwh.unique_dim_sellers_seller_key.6297349530
+[0m10:48:50.403442 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_dwh.unique_dim_sellers_seller_key.6297349530"
+[0m10:48:50.405451 [debug] [Thread-2 (]: Began executing node test.retail_dwh.unique_dim_sellers_seller_key.6297349530
+[0m10:48:50.406477 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_dwh.unique_dim_sellers_seller_key.6297349530"
+[0m10:48:50.409006 [debug] [Thread-2 (]: On test.retail_dwh.unique_dim_sellers_seller_key.6297349530: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_dim_sellers_seller_key.6297349530"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select seller_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_sellers`
+  where seller_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:50.409006 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:48:50.487426 [info ] [Thread-3 (]: 12 of 18 PASS unique_dim_date_date_key ......................................... [[32mPASS[0m in 2.49s]
+[0m10:48:50.490188 [debug] [Thread-3 (]: Finished running node test.retail_dwh.unique_dim_date_date_key.0869fd48f9
+[0m10:48:50.490699 [debug] [Thread-3 (]: Began running node test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e
+[0m10:48:50.491711 [info ] [Thread-3 (]: 16 of 18 START test unique_fact_payments_payment_key ........................... [RUN]
+[0m10:48:50.492712 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.retail_dwh.unique_dim_date_date_key.0869fd48f9, now test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e)
+[0m10:48:50.492712 [debug] [Thread-3 (]: Began compiling node test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e
+[0m10:48:50.503932 [debug] [Thread-3 (]: Writing injected SQL for node "test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e"
+[0m10:48:50.505444 [debug] [Thread-3 (]: Began executing node test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e
+[0m10:48:50.508974 [debug] [Thread-3 (]: Writing runtime sql for node "test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e"
+[0m10:48:50.510498 [debug] [Thread-3 (]: On test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select payment_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_payments`
+  where payment_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:50.511495 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:48:52.346570 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:f6c1d3e8-37a4-4c3f-8cc4-05adb9bcc72b&page=queryresults
+[0m10:48:52.366352 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:7f224a38-742a-49e7-884b-871a96ce704d&page=queryresults
+[0m10:48:52.458530 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:252247ae-6ae9-4479-bfec-50884f8fb220&page=queryresults
+[0m10:48:52.515759 [debug] [Thread-1 (]: SQL status: OK in 0.167 seconds
+[0m10:48:52.536291 [debug] [Thread-4 (]: SQL status: OK in 0.167 seconds
+[0m10:48:52.577475 [debug] [Thread-2 (]: SQL status: OK in 0.119 seconds
+[0m10:48:52.779608 [info ] [Thread-1 (]: 13 of 18 PASS unique_dim_geography_geography_key ............................... [[32mPASS[0m in 2.98s]
+[0m10:48:52.779608 [debug] [Thread-1 (]: Finished running node test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1
+[0m10:48:52.781618 [debug] [Thread-1 (]: Began running node test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f
+[0m10:48:52.781618 [info ] [Thread-1 (]: 17 of 18 START test unique_fact_reviews_review_key ............................. [RUN]
+[0m10:48:52.783449 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.retail_dwh.unique_dim_geography_geography_key.0bbb80e1c1, now test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f)
+[0m10:48:52.783449 [debug] [Thread-1 (]: Began compiling node test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f
+[0m10:48:52.795411 [debug] [Thread-1 (]: Writing injected SQL for node "test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f"
+[0m10:48:52.801590 [info ] [Thread-2 (]: 15 of 18 PASS unique_dim_sellers_seller_key .................................... [[32mPASS[0m in 2.41s]
+[0m10:48:52.806253 [debug] [Thread-2 (]: Finished running node test.retail_dwh.unique_dim_sellers_seller_key.6297349530
+[0m10:48:52.807321 [debug] [Thread-2 (]: Began running node test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6
+[0m10:48:52.809886 [debug] [Thread-1 (]: Began executing node test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f
+[0m10:48:52.811915 [debug] [Thread-1 (]: Writing runtime sql for node "test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f"
+[0m10:48:52.808863 [info ] [Thread-2 (]: 18 of 18 START test unique_fact_sales_sales_key ................................ [RUN]
+[0m10:48:52.814466 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.retail_dwh.unique_dim_sellers_seller_key.6297349530, now test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6)
+[0m10:48:52.815476 [debug] [Thread-2 (]: Began compiling node test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6
+[0m10:48:52.831258 [debug] [Thread-2 (]: Writing injected SQL for node "test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6"
+[0m10:48:52.837105 [debug] [Thread-1 (]: On test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select review_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_reviews`
+  where review_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:52.839123 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:55eb0200-0bf9-445a-9549-874afa93b516&page=queryresults
+[0m10:48:52.839531 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:48:52.833530 [info ] [Thread-4 (]: 14 of 18 PASS unique_dim_products_product_key .................................. [[32mPASS[0m in 2.93s]
+[0m10:48:52.842588 [debug] [Thread-4 (]: Finished running node test.retail_dwh.unique_dim_products_product_key.5837b56652
+[0m10:48:52.898013 [debug] [Thread-2 (]: Began executing node test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6
+[0m10:48:52.901398 [debug] [Thread-2 (]: Writing runtime sql for node "test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6"
+[0m10:48:52.903893 [debug] [Thread-2 (]: On test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "retail_dwh", "target_name": "dev", "node_id": "test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select sales_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
+  where sales_key is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:48:52.905404 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:48:52.994251 [debug] [Thread-3 (]: SQL status: OK in 0.154 seconds
+[0m10:48:53.269417 [info ] [Thread-3 (]: 16 of 18 PASS unique_fact_payments_payment_key ................................. [[32mPASS[0m in 2.78s]
+[0m10:48:53.269417 [debug] [Thread-3 (]: Finished running node test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e
+[0m10:48:54.686474 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:f7231a4e-c6ac-47fc-a1fc-db88324d30c3&page=queryresults
+[0m10:48:54.743063 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=qwiklabs-gcp-03-018d48a9d681&j=bq:asia-southeast1:3e25c888-971d-47e8-866d-2662b68c6942&page=queryresults
+[0m10:48:54.838073 [debug] [Thread-2 (]: SQL status: OK in 0.152 seconds
+[0m10:48:54.867525 [debug] [Thread-1 (]: SQL status: OK in 0.123 seconds
+[0m10:48:55.054158 [info ] [Thread-2 (]: 18 of 18 PASS unique_fact_sales_sales_key ...................................... [[32mPASS[0m in 2.24s]
+[0m10:48:55.057304 [debug] [Thread-2 (]: Finished running node test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6
+[0m10:48:55.199889 [info ] [Thread-1 (]: 17 of 18 PASS unique_fact_reviews_review_key ................................... [[32mPASS[0m in 2.42s]
+[0m10:48:55.202148 [debug] [Thread-1 (]: Finished running node test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f
+[0m10:48:55.203547 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:48:55.259670 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:48:55.260703 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_silver' was properly closed.
+[0m10:48:55.260703 [debug] [MainThread]: Connection 'list_qwiklabs-gcp-03-018d48a9d681_gold' was properly closed.
+[0m10:48:55.261953 [debug] [MainThread]: Connection 'test.retail_dwh.unique_fact_reviews_review_key.24e8d8117f' was properly closed.
+[0m10:48:55.261953 [debug] [MainThread]: Connection 'test.retail_dwh.unique_fact_sales_sales_key.40fae2a4c6' was properly closed.
+[0m10:48:55.261953 [debug] [MainThread]: Connection 'test.retail_dwh.unique_fact_payments_payment_key.1b952fa59e' was properly closed.
+[0m10:48:55.263169 [debug] [MainThread]: Connection 'test.retail_dwh.unique_dim_products_product_key.5837b56652' was properly closed.
+[0m10:48:55.263169 [info ] [MainThread]: 
+[0m10:48:55.265574 [info ] [MainThread]: Finished running 18 data tests in 0 hours 0 minutes and 16.57 seconds (16.57s).
+[0m10:48:55.271597 [debug] [MainThread]: Command end result
+[0m10:48:55.381319 [debug] [MainThread]: Wrote artifact WritableManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\manifest.json
+[0m10:48:55.385897 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\semantic_manifest.json
+[0m10:48:55.387416 [debug] [MainThread]: Wrote artifact OsiDocument to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\osi_document.json
+[0m10:48:55.398767 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\MyPortfolioProject\data-engineer\retail-ecommerce-data-warehouse\dbt_project\target\run_results.json
+[0m10:48:55.398767 [info ] [MainThread]: 
+[0m10:48:55.398767 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:48:55.398767 [info ] [MainThread]: 
+[0m10:48:55.402312 [info ] [MainThread]: Done. PASS=18 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=18
+[0m10:48:55.402312 [debug] [MainThread]: Command `dbt test` succeeded at 10:48:55.402312 after 22.25 seconds
+[0m10:48:55.402312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC943B140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC94396A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018AC943AED0>]}
+[0m10:48:55.402312 [debug] [MainThread]: Flushing usage events
+[0m10:48:56.931555 [debug] [MainThread]: An error was encountered while trying to flush usage events

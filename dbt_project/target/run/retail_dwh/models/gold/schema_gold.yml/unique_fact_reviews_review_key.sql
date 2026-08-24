@@ -14,7 +14,7 @@
 with dbt_test__target as (
 
   select review_key as unique_field
-  from `qwiklabs-gcp-04-05c5517686d1`.`gold`.`fact_reviews`
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_reviews`
   where review_key is not null
 
 )

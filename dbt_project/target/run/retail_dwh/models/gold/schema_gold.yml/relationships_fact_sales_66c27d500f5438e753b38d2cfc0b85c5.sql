@@ -12,14 +12,14 @@
     
 
 with child as (
-    select product_key as from_field
+    select customer_key as from_field
     from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`fact_sales`
-    where product_key is not null
+    where customer_key is not null
 ),
 
 parent as (
-    select product_key as to_field
-    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
+    select customer_key as to_field
+    from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
 )
 
 select

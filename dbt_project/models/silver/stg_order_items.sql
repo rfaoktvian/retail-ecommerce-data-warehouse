@@ -11,7 +11,7 @@ select
     order_item_id,
     product_id,
     seller_id,
-    shipping_limit_date,
+    TIMESTAMP_MICROS(CAST(shipping_limit_date / 1000 AS INT64)) as shipping_limit_date,
     price,
     freight_value,
     dwh_extracted_at,

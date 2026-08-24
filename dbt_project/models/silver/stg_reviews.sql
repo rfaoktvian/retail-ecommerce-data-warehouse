@@ -16,8 +16,8 @@ select
     reviewScore    as review_score,
     commentTitle   as comment_title,
     commentMessage as comment_message,
-    createdAt      as created_at,
-    answeredAt     as answered_at,
+    cast(createdAt as timestamp)   as created_at,
+    cast(answeredAt as timestamp)  as answered_at,
     dwh_extracted_at,
     dwh_source_system
 

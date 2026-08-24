@@ -5,7 +5,7 @@
 with dbt_test__target as (
 
   select product_key as unique_field
-  from `qwiklabs-gcp-04-05c5517686d1`.`gold`.`dim_products`
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_products`
   where product_key is not null
 
 )

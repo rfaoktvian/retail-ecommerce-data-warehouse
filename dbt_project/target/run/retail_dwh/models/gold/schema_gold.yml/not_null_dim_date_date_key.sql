@@ -14,7 +14,7 @@
 
 
 select date_key
-from `qwiklabs-gcp-04-05c5517686d1`.`gold`.`dim_date`
+from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date`
 where date_key is null
 
 

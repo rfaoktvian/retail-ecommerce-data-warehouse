@@ -16,18 +16,18 @@ select
     order_id,
     customer_id,
     lower(trim(order_status))                       as order_status,
-    order_purchase_timestamp                        as order_date,
+    TIMESTAMP_MICROS(CAST(order_purchase_timestamp / 1000 AS INT64)) as order_date,
     -- DQ Note: 160 null (0.16%), wajar untuk order yang belum/tidak di-approve
-    order_approved_at                               as approved_at,
+    TIMESTAMP_MICROS(CAST(order_approved_at / 1000 AS INT64))       as approved_at,
     -- DQ Fix: 166 baris carrier_date < purchase_timestamp → null (tidak logis)
     -- DQ Note: 1783 null (1.79%), wajar untuk order belum di-pickup carrier
     case
         when order_delivered_carrier_date < order_purchase_timestamp then null
-        else order_delivered_carrier_date
-    end                                             as delivered_carrier_at,
+        else TIMESTAMP_MICROS(CAST(order_delivered_carrier_date / 1000 AS INT64))
+    end                                                             as delivered_carrier_at,
     -- DQ Note: 2965 null (2.98%), wajar untuk order belum diterima customer
-    order_delivered_customer_date                   as delivered_customer_at,
-    order_estimated_delivery_date                   as estimated_delivery_date,
+    TIMESTAMP_MICROS(CAST(order_delivered_customer_date / 1000 AS INT64)) as delivered_customer_at,
+    TIMESTAMP_MICROS(CAST(order_estimated_delivery_date / 1000 AS INT64)) as estimated_delivery_date,
     dwh_extracted_at,
     dwh_source_system
 

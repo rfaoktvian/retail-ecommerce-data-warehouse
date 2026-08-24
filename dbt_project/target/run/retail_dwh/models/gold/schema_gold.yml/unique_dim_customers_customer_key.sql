@@ -13,9 +13,9 @@
 
 with dbt_test__target as (
 
-  select date_key as unique_field
-  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_date`
-  where date_key is not null
+  select customer_key as unique_field
+  from `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_customers`
+  where customer_key is not null
 
 )
 
