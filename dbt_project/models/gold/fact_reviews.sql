@@ -26,8 +26,8 @@ select
 
     -- Measures: Response Speed
     date_diff(
-        cast(r.answered_at as date),
-        cast(r.created_at as date),
+        date(cast(r.answered_at as timestamp)),
+        date(cast(r.created_at as timestamp)),
         day
     )                                                   as review_answer_days,
 
@@ -45,4 +45,4 @@ left join {{ ref('stg_orders') }} o
 left join {{ ref('dim_customers') }} dc
     on o.customer_id = dc.customer_id
 left join {{ ref('dim_date') }} dd
-    on cast(r.created_at as date) = dd.full_date
+    on date(cast(r.created_at as timestamp)) = dd.full_date

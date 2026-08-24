@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `qwiklabs-gcp-04-05c5517686d1`.`gold`.`dim_sellers`
+    create or replace table `qwiklabs-gcp-03-018d48a9d681`.`gold`.`dim_sellers`
       
     
     
@@ -10,13 +10,24 @@
     
     OPTIONS()
     as (
-      select
-    to_hex(md5(cast(coalesce(cast(seller_id as string), '_dbt_utils_surrogate_key_null_') as string))) as seller_key,
-    seller_id,
-    zip_code_prefix,
-    city,
-    state
+      -- Gold: dim_sellers
+-- Grain: 1 baris = 1 seller_id
+-- Enrich: join ke stg_geolocation untuk koordinat lat/lng seller (berguna untuk peta distribusi seller)
 
-from `qwiklabs-gcp-04-05c5517686d1`.`silver`.`csv_sellers`
+select
+    to_hex(md5(cast(coalesce(cast(s.seller_id as string), '_dbt_utils_surrogate_key_null_') as string))) as seller_key,
+
+    s.seller_id,
+    s.zip_code_prefix,
+    s.city,
+    s.state,
+
+    -- Koordinat dari geolocation (berguna untuk peta distribusi seller)
+    g.latitude  as seller_latitude,
+    g.longitude as seller_longitude
+
+from `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_sellers` s
+left join `qwiklabs-gcp-03-018d48a9d681`.`silver`.`stg_geolocation` g
+    on s.zip_code_prefix = g.zip_code_prefix
     );
   

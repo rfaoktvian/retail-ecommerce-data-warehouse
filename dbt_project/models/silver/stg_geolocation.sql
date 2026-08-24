@@ -5,7 +5,7 @@
 -- ambil rata-rata lat/lng, dan ambil salah satu nilai city/state yang representatif.
  
 select
-    geolocation_zip_code_prefix as zip_code_prefix,
+    cast(geolocation_zip_code_prefix as string) as zip_code_prefix,
     avg(geolocation_lat) as latitude,
     avg(geolocation_lng) as longitude,
     any_value(lower(trim(geolocation_city))) as city,

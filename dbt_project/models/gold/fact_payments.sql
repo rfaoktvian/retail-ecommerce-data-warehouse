@@ -36,4 +36,4 @@ left join {{ ref('stg_orders') }} o
 left join {{ ref('dim_customers') }} dc
     on o.customer_id = dc.customer_id
 left join {{ ref('dim_date') }} dd
-    on cast(o.order_date as date) = dd.full_date
+    on date(cast(o.order_date as timestamp)) = dd.full_date

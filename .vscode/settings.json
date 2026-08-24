@@ -1,0 +1,8 @@
+{
+    "files.watcherExclude":  {
+                                 "**/dbt_packages/**":  true
+                             },
+    "files.exclude":  {
+                          "**/dbt_packages":  true
+                      }
+}
