@@ -116,8 +116,7 @@ retail-ecommerce-data-warehouse/
 │   ├── ERD_Data_Warehouse.drawio.png
 │   └── Data_Integration.drawio.png
 │
-├── src/notebooks/01_data_understanding.ipynb
-├── secrets/                          
+├── src/notebooks/01_data_understanding.ipynb      
 ├── docker-compose.yml
 ├── load_env.ps1
 ├── .env.example
